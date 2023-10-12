@@ -27,7 +27,7 @@ export default function ({ series, posts, order }: Props) {
         <div class="flex items-center justify-between">
           <div class="flex items justify-center space-x-2">
             <h2 class="text-xl text-black dark:text-white font-bold">{series.data.title}</h2>
-            <span class="text-xl">{`${
+            <span class="text-sm mt-1 md:mt-0 md:text-xl">{`${
               order ? ` • ${order} of ${posts.length}` : ` • ${posts.length} Parts`
             }`}</span>
           </div>
