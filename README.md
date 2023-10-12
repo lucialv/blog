@@ -12,4 +12,4 @@ People that give me Stars give me energy to continue coding!
 
 ## Enjoy! 💕
 
-![enjoy image](/mdimg.png)
+![enjoy image](/src/assets/mdimg.png)
