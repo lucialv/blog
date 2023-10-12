@@ -1,44 +1,15 @@
-# Personal Blog using Astro 2.0 and TailwindCSS
+# My Blogs Website! 🌸
 
-![nimbus-narratives-1](https://github.com/abdllahdev/nimbus-narratives/assets/11673834/8e482adb-d1aa-424c-94d3-b8f930f7e67d)
+Look at the [Website](https://blog.mishu.dev) to view the result.
 
-## Features
+## Contribute 🌸
 
-- ✅ Minimal styling
-- ✅ Light/Dark mode
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-- ✅ Post series
+You can support me via [Paypal](https://paypal.me/lucialvnet) to cotinue my path as a Developer.
 
-## 🚀 Project Structure
+## Pls, give me a Star! ⭐
 
-Inside of your Astro project, you'll see the following folders and files:
+People that give me Stars give me energy to continue coding!
 
-```
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+## Enjoy! 💕
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+![enjoy image](/src/assets/mdimg.png)
