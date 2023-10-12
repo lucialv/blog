@@ -6,7 +6,6 @@ import rehypePrettyCode from "rehype-pretty-code";
 import remarkReadingTime from "./src/plugins/remark-reading-time.mjs";
 import preact from "@astrojs/preact";
 import Icons from "unplugin-icons/vite";
-import url from "postcss-url";
 
 const rehypePrettyCodeOptions = {
   theme: "dracula",
@@ -43,13 +42,6 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-      url({
-        filter: /\.(svg|png|jpe?g|gif)$/i,
-        limit: 8192,
-        fallback: "file-loader",
-        publicPath: "/src/assets/",
-        useHash: true,
-      }),
       Icons({
         compiler: "jsx",
         jsx: "preact",
