@@ -4,7 +4,7 @@ description: "Instal·lació d'Ubuntu amb VirtualBox"
 seriesId: instalacio-sistemes-operatius
 orderInSeries: 3
 pubDate: "Sep 26 2023"
-cover: "~/assets/placeholder-hero.png"
+cover: "~/assets/ubuntu.webp"
 coverAlt: "Hero Image"
 tags:
   - linux

@@ -3,6 +3,8 @@ title: "AP 01 Instal·lació de VirtualBox i configuració de VirtualBox"
 description: "Instal·lació de VirtualBox i configuració de VirtualBox"
 featured: false
 seriesId: instalacio-sistemes-operatius
+cover: "~/assets/VirtualBox.webp"
+coverAlt: "Hero Image"
 orderInSeries: 1
 pubDate: "18 Sep 2023"
 tags:

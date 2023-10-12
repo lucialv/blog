@@ -4,6 +4,8 @@ description: "Instal·lació de Debian amb VirtualBox"
 seriesId: instalacio-sistemes-operatius
 orderInSeries: 2
 pubDate: "Sep 25 2023"
+cover: "~/assets/debian-logo.webp"
+coverAlt: "Hero Image"
 updatedDate: "Sep 27 2023"
 tags:
   - linux
