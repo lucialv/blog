@@ -1,12 +1,12 @@
 ---
-title: "AP 08 Instal·lació de Windows 10 i Fedora 22 Dual Boot"
-description: "AP 08 Instal·lació de Windows 10 i Fedora 22 Dual Boot amb VirtualBox"
+title: "AP 08 Instal·lació de Windows 10 i Fedora 38 Dual Boot"
+description: "AP 08 Instal·lació de Windows 10 i Fedora 38 Dual Boot amb VirtualBox"
 seriesId: instalacio-sistemes-operatius
 orderInSeries: 8
 cover: "~/assets/windows11.jpg"
 coverAlt: "Hero Image"
 featured: true
-pubDate: "16 Oct 2038"
+pubDate: "01 Nov 2023"
 tags:
   - linux
   - Windows 10
