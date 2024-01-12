@@ -1,6 +1,6 @@
 # My Blogs Website! 🌸
 
-Look at the [Website](https://blog.mishu.dev) to view the result.
+Look at the [Website](https://blog.luciaa.live) to view the result.
 
 ## Contribute 🌸
 
