@@ -34,5 +34,5 @@ div[data-rehype-pretty-code-fragment] .line {
 }
 
 div[data-rehype-pretty-code-fragment] .highlighted {
-  @apply border-blue-400 bg-blue-400/20;
+  @apply border-fuchsia-400 bg-fuchsia-400/20;
 }
