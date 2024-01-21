@@ -1,7 +1,7 @@
 ---
 title: "AP 2.1 Wetransfer"
 description: "Recuperació de AP 2.1 Wetransfer"
-seriesId: uf2
+seriesId: uf2w
 orderInSeries: 1
 cover: "~/assets/wetransfer.webp"
 coverAlt: "weTransfer"

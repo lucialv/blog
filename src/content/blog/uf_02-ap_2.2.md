@@ -1,7 +1,7 @@
 ---
 title: "AP 2.2 Google Drive"
 description: "Recuperació de AP 2.2 Google Drive"
-seriesId: uf2
+seriesId: uf2w
 orderInSeries: 2
 cover: "~/assets/drive.webp"
 coverAlt: "Drive"
