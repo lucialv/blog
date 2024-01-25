@@ -3,7 +3,7 @@ title: "AP 2.3 One Drive"
 description: "Recuperació de AP 2.3 One Drive"
 seriesId: uf2w
 orderInSeries: 2
-cover: "~/assets/onedrive.png"
+cover: "~/assets/onedrive.jpg"
 coverAlt: "OneDrive"
 featured: true
 pubDate: "12 Jan 2024"
