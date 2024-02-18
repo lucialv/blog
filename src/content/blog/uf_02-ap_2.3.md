@@ -14,78 +14,74 @@ tags:
 
 ## Exercici 1
 
-Primer creem una carpeta en la meva unitat amb el nom de "Drive de LAT" fent click en nou i després en carpeta.
+Anem a la pàgina de [One Drive](https://www.microsoft.com/es-es/microsoft-365/onedrive/download) i li donem al botó de "Descargar".
 
-![Carpeta](/uf02-ap2.2/1.png)
+![Carpeta](/uf02-ap2.3/1.png)
 
-Si li donem click als tres punts podem seleccionar l'opció de compartir.
+Ara li donem al botó i això ens descarregarà l'aplicació de One Drive per a l'ordinador.
 
-![Compartir](/uf02-ap2.2/2.png)
+![Compartir](/uf02-ap2.4/2.png)
 
-Jo ja he compartit la carpeta amb mi mateixa amb "editor" per poder editar el document de Google, però tambè podriem possar "Lector" per només poder veure el document o l'opciò "Pot comentar" per poder fer comentaris en els documents a més de ver-ho.
-
-![Compartir](/uf02-ap2.2/3.png)
-
-Ara farem click dret en un espai buit de la carpeta i seleccionarem la ópcio de Document de Google. Li posarem de nom "googleLAT".
-
-![Document](/uf02-ap2.2/4.png)
-
-Ara el modifiquem en la nostra compte de Sa Palomera i desprès amb la nostra compte personal. Vem el historial de versions i com podem veure, hi ha dos versions.
-
-![Versions](/uf02-ap2.2/5.png)
-
-![Versions](/uf02-ap2.2/6.png)
+Crec que es millor que DropBox perque et dona 5GB de capacitat gratuïta (DropBox només 2GB) i té una millor integració amb els altres programes de Microsoft apart de que es més fàcil de compartir carpetes i fitxers.
 
 ## Exercici 2
 
-Ara ens anem a la secció de "Unitats compartides" i fem click dret en un espai buit i seleccionem la opció de "Unitat compartida nova". I li posem de nom "Unitat compartida de LAT".
+Una vegada descarregat anem a la carpeta de OneDrive que s'ha creat i fem una nova carpeta amb el nom de "OneDrive de LAT" i dins posarem un doc amb el nom de "oneLAT"
 
-![Unitat compartida](/uf02-ap2.2/7.png)
+![Compartir](/uf02-ap2.4/3.png)
 
-Ara quan compartim la Unitat podem veure que els permisos son diferents. Tenim lector i pot comentar igual que abans però ara "Editor" es diu "Col·laborador". Però ara tenim dos noves opcions, "Gestor de contingut" i "Gestor", el primer ens permet gestionar els fitxers i carpetes de la unitat compartida a més de poder compartir el contigut i el segon ens permet gestionar els permisos de la unitat compartida.
+Per compartirla fem botó dret sobre la carpeta i li donem a "OneDrive" > "Share".
 
-![Unitat compartida](/uf02-ap2.2/8.png)
+![Compartir](/uf02-ap2.4/4.png)
 
-Ara creem un full de càlcul i el compartim amb la nostra compte personal. Fent click dret en un espai buit de la unitat compartida i seleccionant la opció de "Full de càlcul de Google". Li possem de nom "driveLAT".
+Ara posem el correu de la persona amb qui volem compartir la carpeta i li donem a "Send".
 
-![Full de càlcul](/uf02-ap2.2/9.png)
+![Compartir](/uf02-ap2.4/5.png)
 
-Ara el modifiquem en la nostra compte de Sa Palomera i desprès amb la nostra compte personal. Vem el historial de versions i com podem veure, hi ha dos versions.
+I com podem veure desde l'altre compte puc veure que s'ha compartit la carpeta perfectament.
 
-![Versions](/uf02-ap2.2/10.png)
+![Compartir](/uf02-ap2.4/6.png)
 
-![Versions](/uf02-ap2.2/11.png)
+Ara li posarem un fitxer de excel a la carpeta que m'ha compartit l'altre compte.
+
+![Compartir](/uf02-ap2.4/8.png)
+
+Modifico el fitxer excel que m'ha compartir l'altre compte (Desde navegador)
+
+![Compartir](/uf02-ap2.4/10.png) 
+
+Ara ho modifico desde el meu OneDrive (Desde l'aplicació de l'ordinador)
+
+![Compartir](/uf02-ap2.4/11.png)
+
+Ara per veure el historial de versions anem a la pàgina de OneDrive i fem botó dret sobre el fitxer i li donem a "Historial de versiones".
+
+![Compartir](/uf02-ap2.4/12.png)
+
+I com podem veure podem veure les diferents versions del fitxer.
+
+![Compartir](/uf02-ap2.4/13.png)
 
 ## Exercici 3
 
-Creem una carpeta a on vulguem en el nostre ordinador i li posem de nom "Laptop de LAT".
+Ara descarregem el One Drive en el nostre mòbil.
 
-![Carpeta](/uf02-ap2.2/12.png)
+![Compartir](/uf02-ap2.4/14.png)
 
-Li afegim un fitxer .pptx amb el nom "Fitxer local LAT".
+I com podem veure tenim la carpeta nostra que hem compartir amb l'altre compte.
 
-![Fitxer](/uf02-ap2.2/13.png)
+![Compartir](/uf02-ap2.4/16.png)
 
-Anirem a la pàgina de descarrega de [Google Drive](https://www.google.com/drive/download/) i descarregarem l'aplicació de Drive per a l'ordinador.
+I la que ens em compartit amb l'altre compte.
 
-![Descarrega](/uf02-ap2.2/14.png)
+![Compartir](/uf02-ap2.4/15.png)
 
-Un cop descarregat l'instal·lem i l'obrim. Ens demanarà que ens identifiquem amb el nostre compte de Google. Un cop fet anem a la nostra carpeta de "Laptop de LAT" i fem click dret en la carpeta i seleccionem la opció de "Sync or Backup this folder" (Segons el teu idoma de l'ordinador).
+## Exercici 4
 
-![Sync](/uf02-ap2.2/15.png)
+Per fer copies de seguretat es molt fàcil, només tens que anar a la configuració de OneDrive i dorna-li a "Manage Backup", es la primera opció.
 
-S'obrirà una finestra i seleccionem la opció de "Sync With Google Drive" i li donem a "Done". I ja tindrem la carpeta sincronitzada amb el nostre Drive.
+![Compartir](/uf02-ap2.4/17.png)
 
-![Sync](/uf02-ap2.2/16.png)
+I podries seleccionar les carpetes que vols fer còpies de seguretat.
 
-I ara en el nostre ordinador tenim la unitat compartida de LAT. Totalment sincronitzada amb el nostre Drive.
-
-![Sync](/uf02-ap2.2/17.png)
-
-Tambè tenim la carpeta de "Drive de LAT" sincronitzada amb el nostre Drive.
-
-![Sync](/uf02-ap2.2/18.png)
-
-I per últim en el nostre drive podem veure el fitxer "Fitxer local LAT" que hem afegit a la carpeta de "Laptop de LAT".
-
-![Sync](/uf02-ap2.2/19.png)
+![Compartir](/uf02-ap2.4/18.png)
