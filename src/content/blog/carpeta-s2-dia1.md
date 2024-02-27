@@ -3,7 +3,7 @@ title: "Carpeta de EIE - Día 1 - Segundo trimestre"
 description: "Carpeta hecha con el fin de documentar todos los días de clase de EIE. Día 1"
 featured: false
 seriesId: carpeta2
-cover: "~/assets/brainstorming.webp"
+cover: "~/assets/hola.webp"
 coverAlt: "Hero Image"
 orderInSeries: 1
 pubDate: "21 Nov 2023"

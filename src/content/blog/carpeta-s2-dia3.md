@@ -3,7 +3,7 @@ title: "Carpeta de EIE - Día 3 - Segundo trimestre"
 description: "Carpeta hecha con el fin de documentar todos los días de clase de EIE. Día 3"
 featured: false
 seriesId: carpeta2
-cover: "~/assets/brainstorming.webp"
+cover: "~/assets/dia6.jpg"
 coverAlt: "Hero Image"
 orderInSeries: 3
 pubDate: "5 Dec 2023"
