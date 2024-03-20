@@ -114,6 +114,10 @@ a2ensite wordpress.conf
 ```
 
 ```bash
+a2dissite 000-default.conf
+```
+
+```bash
 a2enmod rewrite
 ```
 
@@ -139,6 +143,10 @@ I el copiem a la carpeta de Apache amb el següent comandament:
 
 ```bash
 cp -a /home/usuario/Downloads/wordpress-6.4.3-es_ES/wordpress/ /var/www/html/wordpress
+```
+
+```bash
+chown -R www-data:www-data /var/www/html/wordpress
 ```
 
 I mirem si funciona amb el següent enllaç:
