@@ -6,7 +6,8 @@ coverAlt: "Escritoris"
 pubDate: "20 Mar 2024"
 tags:
   - linux
-  - wordpress
+  - windows
+  - sistemes
 ---
 
 ## Windows 10
