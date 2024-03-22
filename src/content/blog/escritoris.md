@@ -14,13 +14,55 @@ tags:
 
 ### Canviar el fons de pantalla
 
-![windows-10](/escritoris/windows-10/1.png)
+![windows-10](/escritoris/windows-10/fondo.png)
 
 ### Canviar el color del tema
 
+![windows-10](/escritoris/windows-10/colores.png)
+
 ### Canviar l'orientació de la pantalla
 
-### Canviar la resolució de pantalla
+![windows-10](/escritoris/windows-10/orientar.png)
+
+### Canviar Usuari
+
+![windows-10](/escritoris/windows-10/usuario.png)
+
+### Canviar mida icones
+
+![windows-10](/escritoris/windows-10/iconos.png)
+
+### Canviar l'idioma
+
+![windows-10](/escritoris/windows-10/idioma.png)
+
+### Gestionar l'inici
+
+![windows-10](/escritoris/windows-10/iniciogest.png)
+
+### Desancar icones de la barra de tasques
+
+Click dret sobre l'ícone i seleccionar `Desanclar de la barra de tasques`
+
+![windows-10](/escritoris/windows-10/desanclar.png)
+
+### Daltonismo
+
+![windows-10](/escritoris/windows-10/daltonismo.png)
+
+### Canviar el inici de sessió
+
+![windows-10](/escritoris/windows-10/cambiarses.png)
+
+### Buscar document sabent el nombre
+
+![windows-10](/escritoris/windows-10/bdoc.png)
+
+### Canviar l'horientació de la barra de tasques
+
+![windows-10](/escritoris/windows-10/barra.png)
+
+<!-- ### Canviar la resolució de pantalla
 
 ### Ajustar la brillantor de la pantalla
 
@@ -42,228 +84,354 @@ tags:
 
 ### Configurar les notificacions del sistema
 
-### Personalitzar l'escriptori
+### Personalitzar l'escriptori -->
 
 ## Windows 11
 
 ### Canviar el fons de pantalla
 
+![windows-10](/escritoris/windows-10asd/fondo.png)
+
 ### Canviar el color del tema
+
+![windows-10](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-### Canviar la resolució de pantalla
+![windows-10](/escritoris/windows-1asd0/orientar.png)
 
-### Ajustar la brillantor de la pantalla
+### Canviar Usuari
 
-### Configurar múltiples monitors
+![windows-10](/escritoris/windows-1asd0/usuario.png)
 
-### Personalitzar la barra de tasques
+### Canviar mida icones
 
-### Canviar la disposició dels elements del menú Inici
+![windows-10](/escritoris/windows-1asd0/iconos.png)
 
-### Configurar el protector de pantalla
+### Canviar l'idioma
 
-### Ajustar el volum del sistema
+![windows-10](/escritoris/windows-10asd/idioma.png)
 
-### Canviar el disseny del teclat
+### Gestionar l'inici
 
-### Configurar les opcions d'accessibilitat
+![windows-10](/escritoris/windows-10asd/iniciogest.png)
 
-### Establir les opcions de privacitat
+### Desancar icones de la barra de tasques
 
-### Configurar les notificacions del sistema
+![windows-10](/escritoris/windows-10asd/desanclar.png)
 
-### Personalitzar l'escriptori
+### Daltonismo
+
+![windows-10](/escritoris/windows-10asd/daltonismo.png)
+
+### Canviar el inici de sessió
+
+![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+
+### Buscar document sabent el nombre
+
+![windows-10](/escritoris/windows-10asda/bdoc.png)
+
+### Canviar l'horientació de la barra de tasques
+
+![windows-10](/escritoris/windows-asda/barra.png)
 
 ## Mac
 
 ### Canviar el fons de pantalla
 
+![windows-10](/escritoris/windows-10asd/fondo.png)
+
 ### Canviar el color del tema
+
+![windows-10](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-### Canviar la resolució de pantalla
+![windows-10](/escritoris/windows-1asd0/orientar.png)
 
-### Ajustar la brillantor de la pantalla
+### Canviar Usuari
 
-### Configurar múltiples monitors
+![windows-10](/escritoris/windows-1asd0/usuario.png)
 
-### Personalitzar el dock
+### Canviar mida icones
 
-### Canviar la disposició dels elements del dock
+![windows-10](/escritoris/windows-1asd0/iconos.png)
 
-### Configurar el protector de pantalla
+### Canviar l'idioma
 
-### Ajustar el volum del sistema
+![windows-10](/escritoris/windows-10asd/idioma.png)
 
-### Canviar el disseny del teclat
+### Gestionar l'inici
 
-### Configurar les opcions d'accessibilitat
+![windows-10](/escritoris/windows-10asd/iniciogest.png)
 
-### Establir les opcions de privacitat
+### Desancar icones de la barra de tasques
 
-### Configurar les notificacions del sistema
+![windows-10](/escritoris/windows-10asd/desanclar.png)
 
-### Personalitzar l'escriptori
+### Daltonismo
+
+![windows-10](/escritoris/windows-10asd/daltonismo.png)
+
+### Canviar el inici de sessió
+
+![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+
+### Buscar document sabent el nombre
+
+![windows-10](/escritoris/windows-10asda/bdoc.png)
+
+### Canviar l'horientació de la barra de tasques
+
+![windows-10](/escritoris/windows-asda/barra.png)
 
 ## Gnome
 
 ### Canviar el fons de pantalla
 
+![windows-10](/escritoris/windows-10asd/fondo.png)
+
 ### Canviar el color del tema
+
+![windows-10](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-### Canviar la resolució de pantalla
+![windows-10](/escritoris/windows-1asd0/orientar.png)
 
-### Ajustar la brillantor de la pantalla
+### Canviar Usuari
 
-### Configurar múltiples monitors
+![windows-10](/escritoris/windows-1asd0/usuario.png)
 
-### Personalitzar el panell superior
+### Canviar mida icones
 
-### Canviar el disseny de les finestres
+![windows-10](/escritoris/windows-1asd0/iconos.png)
 
-### Configurar els efectes d'animació
+### Canviar l'idioma
 
-### Ajustar la mida dels ícones a l'escriptori
+![windows-10](/escritoris/windows-10asd/idioma.png)
 
-### Personalitzar el menú d'aplicacions
+### Gestionar l'inici
 
-### Configurar les opcions del ratolí
+![windows-10](/escritoris/windows-10asd/iniciogest.png)
 
-### Establir les preferències del sistema
+### Desancar icones de la barra de tasques
 
-### Configurar les opcions de xarxa
+![windows-10](/escritoris/windows-10asd/desanclar.png)
 
-### Personalitzar l'escriptori
+### Daltonismo
+
+![windows-10](/escritoris/windows-10asd/daltonismo.png)
+
+### Canviar el inici de sessió
+
+![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+
+### Buscar document sabent el nombre
+
+![windows-10](/escritoris/windows-10asda/bdoc.png)
+
+### Canviar l'horientació de la barra de tasques
+
+![windows-10](/escritoris/windows-asda/barra.png)
 
 ## Mate
 
 ### Canviar el fons de pantalla
 
+![windows-10](/escritoris/windows-10asd/fondo.png)
+
 ### Canviar el color del tema
+
+![windows-10](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-### Canviar la resolució de pantalla
+![windows-10](/escritoris/windows-1asd0/orientar.png)
 
-### Ajustar la brillantor de la pantalla
+### Canviar Usuari
 
-### Configurar múltiples monitors
+![windows-10](/escritoris/windows-1asd0/usuario.png)
 
-### Personalitzar el menú d'aplicacions
+### Canviar mida icones
 
-### Canviar el disseny de les finestres
+![windows-10](/escritoris/windows-1asd0/iconos.png)
 
-### Configurar els efectes d'animació
+### Canviar l'idioma
 
-### Ajustar la mida dels ícones a l'escriptori
+![windows-10](/escritoris/windows-10asd/idioma.png)
 
-### Personalitzar el panell de control
+### Gestionar l'inici
 
-### Configurar les opcions del ratolí
+![windows-10](/escritoris/windows-10asd/iniciogest.png)
 
-### Establir les preferències del sistema
+### Desancar icones de la barra de tasques
 
-### Configurar les opcions de xarxa
+![windows-10](/escritoris/windows-10asd/desanclar.png)
 
-### Personalitzar l'escriptori
+### Daltonismo
+
+![windows-10](/escritoris/windows-10asd/daltonismo.png)
+
+### Canviar el inici de sessió
+
+![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+
+### Buscar document sabent el nombre
+
+![windows-10](/escritoris/windows-10asda/bdoc.png)
+
+### Canviar l'horientació de la barra de tasques
+
+![windows-10](/escritoris/windows-asda/barra.png)
 
 ## Cinnamon
 
 ### Canviar el fons de pantalla
 
+![windows-10](/escritoris/windows-10asd/fondo.png)
+
 ### Canviar el color del tema
+
+![windows-10](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-### Canviar la resolució de pantalla
+![windows-10](/escritoris/windows-1asd0/orientar.png)
 
-### Ajustar la brillantor de la pantalla
+### Canviar Usuari
 
-### Configurar múltiples monitors
+![windows-10](/escritoris/windows-1asd0/usuario.png)
 
-### Personalitzar el panell de Cinnamon
+### Canviar mida icones
 
-### Canviar el disseny de les finestres
+![windows-10](/escritoris/windows-1asd0/iconos.png)
 
-### Configurar els efectes d'animació
+### Canviar l'idioma
 
-### Ajustar la mida dels ícones a l'escriptori
+![windows-10](/escritoris/windows-10asd/idioma.png)
 
-### Personalitzar el menú d'aplicacions
+### Gestionar l'inici
 
-### Configurar les opcions del ratolí
+![windows-10](/escritoris/windows-10asd/iniciogest.png)
 
-### Establir les preferències del sistema
+### Desancar icones de la barra de tasques
 
-### Configurar les opcions de xarxa
+![windows-10](/escritoris/windows-10asd/desanclar.png)
 
-### Personalitzar l'escriptori
+### Daltonismo
+
+![windows-10](/escritoris/windows-10asd/daltonismo.png)
+
+### Canviar el inici de sessió
+
+![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+
+### Buscar document sabent el nombre
+
+![windows-10](/escritoris/windows-10asda/bdoc.png)
+
+### Canviar l'horientació de la barra de tasques
+
+![windows-10](/escritoris/windows-asda/barra.png)
 
 ## KDE Plasma
 
 ### Canviar el fons de pantalla
 
+![windows-10](/escritoris/windows-10asd/fondo.png)
+
 ### Canviar el color del tema
+
+![windows-10](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-### Canviar la resolució de pantalla
+![windows-10](/escritoris/windows-1asd0/orientar.png)
 
-### Ajustar la brillantor de la pantalla
+### Canviar Usuari
 
-### Configurar múltiples monitors
+![windows-10](/escritoris/windows-1asd0/usuario.png)
 
-### Personalitzar el panell de KDE
+### Canviar mida icones
 
-### Canviar el disseny de les finestres
+![windows-10](/escritoris/windows-1asd0/iconos.png)
 
-### Configurar els efectes d'animació
+### Canviar l'idioma
 
-### Ajustar la mida dels ícones a l'escriptori
+![windows-10](/escritoris/windows-10asd/idioma.png)
 
-### Personalitzar el menú d'aplicacions
+### Gestionar l'inici
 
-### Configurar les opcions del ratolí
+![windows-10](/escritoris/windows-10asd/iniciogest.png)
 
-### Establir les preferències del sistema
+### Desancar icones de la barra de tasques
 
-### Configurar les opcions de xarxa
+![windows-10](/escritoris/windows-10asd/desanclar.png)
 
-### Personalitzar l'escriptori
+### Daltonismo
+
+![windows-10](/escritoris/windows-10asd/daltonismo.png)
+
+### Canviar el inici de sessió
+
+![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+
+### Buscar document sabent el nombre
+
+![windows-10](/escritoris/windows-10asda/bdoc.png)
+
+### Canviar l'horientació de la barra de tasques
+
+![windows-10](/escritoris/windows-asda/barra.png)
 
 ## LXDE
 
 ### Canviar el fons de pantalla
 
+![windows-10](/escritoris/windows-10asd/fondo.png)
+
 ### Canviar el color del tema
+
+![windows-10](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-### Canviar la resolució de pantalla
+![windows-10](/escritoris/windows-1asd0/orientar.png)
 
-### Ajustar la brillantor de la pantalla
+### Canviar Usuari
 
-### Configurar múltiples monitors
+![windows-10](/escritoris/windows-1asd0/usuario.png)
 
-### Personalitzar el menú d'aplicacions
+### Canviar mida icones
 
-### Canviar el disseny de les finestres
+![windows-10](/escritoris/windows-1asd0/iconos.png)
 
-### Configurar els efectes d'animació
+### Canviar l'idioma
 
-### Ajustar la mida dels ícones a l'escriptori
+![windows-10](/escritoris/windows-10asd/idioma.png)
 
-### Personalitzar el panell de control
+### Gestionar l'inici
 
-### Configurar les opcions del ratolí
+![windows-10](/escritoris/windows-10asd/iniciogest.png)
 
-### Establir les preferències del sistema
+### Desancar icones de la barra de tasques
 
-### Configurar les opcions de xarxa
+![windows-10](/escritoris/windows-10asd/desanclar.png)
 
-### Personalitzar l'escriptori
+### Daltonismo
+
+![windows-10](/escritoris/windows-10asd/daltonismo.png)
+
+### Canviar el inici de sessió
+
+![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+
+### Buscar document sabent el nombre
+
+![windows-10](/escritoris/windows-10asda/bdoc.png)
+
+### Canviar l'horientació de la barra de tasques
+
+![windows-10](/escritoris/windows-asda/barra.png)
