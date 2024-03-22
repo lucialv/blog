@@ -30,7 +30,7 @@ tags:
 
 ### Canviar mida icones
 
-![windows-10](/escritoris/windows-10/iconos.png)
+![windows-10](/escritoris/windows-10/midaiconos.png)
 
 ### Canviar l'idioma
 
@@ -90,348 +90,348 @@ Click dret sobre l'ícone i seleccionar `Desanclar de la barra de tasques`
 
 ### Canviar el fons de pantalla
 
-![windows-10](/escritoris/windows-10asd/fondo.png)
+![windows-11](/escritoris/windows-10asd/fondo.png)
 
 ### Canviar el color del tema
 
-![windows-10](/escritoris/windows-1asd0/colores.png)
+![windows-11](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-![windows-10](/escritoris/windows-1asd0/orientar.png)
+![windows-11](/escritoris/windows-1asd0/orientar.png)
 
 ### Canviar Usuari
 
-![windows-10](/escritoris/windows-1asd0/usuario.png)
+![windows-11](/escritoris/windows-1asd0/usuario.png)
 
 ### Canviar mida icones
 
-![windows-10](/escritoris/windows-1asd0/iconos.png)
+![windows-11](/escritoris/windows-1asd0/iconos.png)
 
 ### Canviar l'idioma
 
-![windows-10](/escritoris/windows-10asd/idioma.png)
+![windows-11](/escritoris/windows-10asd/idioma.png)
 
 ### Gestionar l'inici
 
-![windows-10](/escritoris/windows-10asd/iniciogest.png)
+![windows-11](/escritoris/windows-10asd/iniciogest.png)
 
 ### Desancar icones de la barra de tasques
 
-![windows-10](/escritoris/windows-10asd/desanclar.png)
+![windows-11](/escritoris/windows-10asd/desanclar.png)
 
 ### Daltonismo
 
-![windows-10](/escritoris/windows-10asd/daltonismo.png)
+![windows-11](/escritoris/windows-10asd/daltonismo.png)
 
 ### Canviar el inici de sessió
 
-![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+![windows-11](/escritoris/windows-10adsa/cambiarses.png)
 
 ### Buscar document sabent el nombre
 
-![windows-10](/escritoris/windows-10asda/bdoc.png)
+![windows-11](/escritoris/windows-10asda/bdoc.png)
 
 ### Canviar l'horientació de la barra de tasques
 
-![windows-10](/escritoris/windows-asda/barra.png)
+![windows-11](/escritoris/windows-asda/barra.png)
 
 ## Mac
 
 ### Canviar el fons de pantalla
 
-![windows-10](/escritoris/windows-10asd/fondo.png)
+![mac](/escritoris/windows-10asd/fondo.png)
 
 ### Canviar el color del tema
 
-![windows-10](/escritoris/windows-1asd0/colores.png)
+![mac](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-![windows-10](/escritoris/windows-1asd0/orientar.png)
+![mac](/escritoris/windows-1asd0/orientar.png)
 
 ### Canviar Usuari
 
-![windows-10](/escritoris/windows-1asd0/usuario.png)
+![mac](/escritoris/windows-1asd0/usuario.png)
 
 ### Canviar mida icones
 
-![windows-10](/escritoris/windows-1asd0/iconos.png)
+![mac](/escritoris/windows-1asd0/iconos.png)
 
 ### Canviar l'idioma
 
-![windows-10](/escritoris/windows-10asd/idioma.png)
+![mac](/escritoris/windows-10asd/idioma.png)
 
 ### Gestionar l'inici
 
-![windows-10](/escritoris/windows-10asd/iniciogest.png)
+![mac](/escritoris/windows-10asd/iniciogest.png)
 
 ### Desancar icones de la barra de tasques
 
-![windows-10](/escritoris/windows-10asd/desanclar.png)
+![mac](/escritoris/windows-10asd/desanclar.png)
 
 ### Daltonismo
 
-![windows-10](/escritoris/windows-10asd/daltonismo.png)
+![mac](/escritoris/windows-10asd/daltonismo.png)
 
 ### Canviar el inici de sessió
 
-![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+![mac](/escritoris/windows-10adsa/cambiarses.png)
 
 ### Buscar document sabent el nombre
 
-![windows-10](/escritoris/windows-10asda/bdoc.png)
+![mac](/escritoris/windows-10asda/bdoc.png)
 
 ### Canviar l'horientació de la barra de tasques
 
-![windows-10](/escritoris/windows-asda/barra.png)
+![mac](/escritoris/windows-asda/barra.png)
 
 ## Gnome
 
 ### Canviar el fons de pantalla
 
-![windows-10](/escritoris/windows-10asd/fondo.png)
+![gnome](/escritoris/windows-10asd/fondo.png)
 
 ### Canviar el color del tema
 
-![windows-10](/escritoris/windows-1asd0/colores.png)
+![gnome](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-![windows-10](/escritoris/windows-1asd0/orientar.png)
+![gnome](/escritoris/windows-1asd0/orientar.png)
 
 ### Canviar Usuari
 
-![windows-10](/escritoris/windows-1asd0/usuario.png)
+![gnome](/escritoris/windows-1asd0/usuario.png)
 
 ### Canviar mida icones
 
-![windows-10](/escritoris/windows-1asd0/iconos.png)
+![gnome](/escritoris/windows-1asd0/iconos.png)
 
 ### Canviar l'idioma
 
-![windows-10](/escritoris/windows-10asd/idioma.png)
+![gnome](/escritoris/windows-10asd/idioma.png)
 
 ### Gestionar l'inici
 
-![windows-10](/escritoris/windows-10asd/iniciogest.png)
+![gnome](/escritoris/windows-10asd/iniciogest.png)
 
 ### Desancar icones de la barra de tasques
 
-![windows-10](/escritoris/windows-10asd/desanclar.png)
+![gnome](/escritoris/windows-10asd/desanclar.png)
 
 ### Daltonismo
 
-![windows-10](/escritoris/windows-10asd/daltonismo.png)
+![gnome](/escritoris/windows-10asd/daltonismo.png)
 
 ### Canviar el inici de sessió
 
-![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+![gnome](/escritoris/windows-10adsa/cambiarses.png)
 
 ### Buscar document sabent el nombre
 
-![windows-10](/escritoris/windows-10asda/bdoc.png)
+![gnome](/escritoris/windows-10asda/bdoc.png)
 
 ### Canviar l'horientació de la barra de tasques
 
-![windows-10](/escritoris/windows-asda/barra.png)
+![gnome](/escritoris/windows-asda/barra.png)
 
 ## Mate
 
 ### Canviar el fons de pantalla
 
-![windows-10](/escritoris/windows-10asd/fondo.png)
+![mate](/escritoris/windows-10asd/fondo.png)
 
 ### Canviar el color del tema
 
-![windows-10](/escritoris/windows-1asd0/colores.png)
+![mate](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-![windows-10](/escritoris/windows-1asd0/orientar.png)
+![mate](/escritoris/windows-1asd0/orientar.png)
 
 ### Canviar Usuari
 
-![windows-10](/escritoris/windows-1asd0/usuario.png)
+![mate](/escritoris/windows-1asd0/usuario.png)
 
 ### Canviar mida icones
 
-![windows-10](/escritoris/windows-1asd0/iconos.png)
+![mate](/escritoris/windows-1asd0/iconos.png)
 
 ### Canviar l'idioma
 
-![windows-10](/escritoris/windows-10asd/idioma.png)
+![mate](/escritoris/windows-10asd/idioma.png)
 
 ### Gestionar l'inici
 
-![windows-10](/escritoris/windows-10asd/iniciogest.png)
+![mate](/escritoris/windows-10asd/iniciogest.png)
 
 ### Desancar icones de la barra de tasques
 
-![windows-10](/escritoris/windows-10asd/desanclar.png)
+![mate](/escritoris/windows-10asd/desanclar.png)
 
 ### Daltonismo
 
-![windows-10](/escritoris/windows-10asd/daltonismo.png)
+![mate](/escritoris/windows-10asd/daltonismo.png)
 
 ### Canviar el inici de sessió
 
-![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+![mate](/escritoris/windows-10adsa/cambiarses.png)
 
 ### Buscar document sabent el nombre
 
-![windows-10](/escritoris/windows-10asda/bdoc.png)
+![mate](/escritoris/windows-10asda/bdoc.png)
 
 ### Canviar l'horientació de la barra de tasques
 
-![windows-10](/escritoris/windows-asda/barra.png)
+![mate](/escritoris/windows-asda/barra.png)
 
-## Cinnamon
+## Cinamon
 
 ### Canviar el fons de pantalla
 
-![windows-10](/escritoris/windows-10asd/fondo.png)
+![cinamon](/escritoris/windows-10asd/fondo.png)
 
 ### Canviar el color del tema
 
-![windows-10](/escritoris/windows-1asd0/colores.png)
+![cinamon](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-![windows-10](/escritoris/windows-1asd0/orientar.png)
+![cinamon](/escritoris/windows-1asd0/orientar.png)
 
 ### Canviar Usuari
 
-![windows-10](/escritoris/windows-1asd0/usuario.png)
+![cinamon](/escritoris/windows-1asd0/usuario.png)
 
 ### Canviar mida icones
 
-![windows-10](/escritoris/windows-1asd0/iconos.png)
+![cinamon](/escritoris/windows-1asd0/iconos.png)
 
 ### Canviar l'idioma
 
-![windows-10](/escritoris/windows-10asd/idioma.png)
+![cinamon](/escritoris/windows-10asd/idioma.png)
 
 ### Gestionar l'inici
 
-![windows-10](/escritoris/windows-10asd/iniciogest.png)
+![cinamon](/escritoris/windows-10asd/iniciogest.png)
 
 ### Desancar icones de la barra de tasques
 
-![windows-10](/escritoris/windows-10asd/desanclar.png)
+![cinamon](/escritoris/windows-10asd/desanclar.png)
 
 ### Daltonismo
 
-![windows-10](/escritoris/windows-10asd/daltonismo.png)
+![cinamon](/escritoris/windows-10asd/daltonismo.png)
 
 ### Canviar el inici de sessió
 
-![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+![cinamon](/escritoris/windows-10adsa/cambiarses.png)
 
 ### Buscar document sabent el nombre
 
-![windows-10](/escritoris/windows-10asda/bdoc.png)
+![cinamon](/escritoris/windows-10asda/bdoc.png)
 
 ### Canviar l'horientació de la barra de tasques
 
-![windows-10](/escritoris/windows-asda/barra.png)
+![cinamon](/escritoris/windows-asda/barra.png)
 
 ## KDE Plasma
 
 ### Canviar el fons de pantalla
 
-![windows-10](/escritoris/windows-10asd/fondo.png)
+![kde](/escritoris/windows-10asd/fondo.png)
 
 ### Canviar el color del tema
 
-![windows-10](/escritoris/windows-1asd0/colores.png)
+![kde](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-![windows-10](/escritoris/windows-1asd0/orientar.png)
+![kde](/escritoris/windows-1asd0/orientar.png)
 
 ### Canviar Usuari
 
-![windows-10](/escritoris/windows-1asd0/usuario.png)
+![kde](/escritoris/windows-1asd0/usuario.png)
 
 ### Canviar mida icones
 
-![windows-10](/escritoris/windows-1asd0/iconos.png)
+![kde](/escritoris/windows-1asd0/iconos.png)
 
 ### Canviar l'idioma
 
-![windows-10](/escritoris/windows-10asd/idioma.png)
+![kde](/escritoris/windows-10asd/idioma.png)
 
 ### Gestionar l'inici
 
-![windows-10](/escritoris/windows-10asd/iniciogest.png)
+![kde](/escritoris/windows-10asd/iniciogest.png)
 
 ### Desancar icones de la barra de tasques
 
-![windows-10](/escritoris/windows-10asd/desanclar.png)
+![kde](/escritoris/windows-10asd/desanclar.png)
 
 ### Daltonismo
 
-![windows-10](/escritoris/windows-10asd/daltonismo.png)
+![kde](/escritoris/windows-10asd/daltonismo.png)
 
 ### Canviar el inici de sessió
 
-![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+![kde](/escritoris/windows-10adsa/cambiarses.png)
 
 ### Buscar document sabent el nombre
 
-![windows-10](/escritoris/windows-10asda/bdoc.png)
+![kde](/escritoris/windows-10asda/bdoc.png)
 
 ### Canviar l'horientació de la barra de tasques
 
-![windows-10](/escritoris/windows-asda/barra.png)
+![kde](/escritoris/windows-asda/barra.png)
 
 ## LXDE
 
 ### Canviar el fons de pantalla
 
-![windows-10](/escritoris/windows-10asd/fondo.png)
+![lxde](/escritoris/windows-10asd/fondo.png)
 
 ### Canviar el color del tema
 
-![windows-10](/escritoris/windows-1asd0/colores.png)
+![lxde](/escritoris/windows-1asd0/colores.png)
 
 ### Canviar l'orientació de la pantalla
 
-![windows-10](/escritoris/windows-1asd0/orientar.png)
+![lxde](/escritoris/windows-1asd0/orientar.png)
 
 ### Canviar Usuari
 
-![windows-10](/escritoris/windows-1asd0/usuario.png)
+![lxde](/escritoris/windows-1asd0/usuario.png)
 
 ### Canviar mida icones
 
-![windows-10](/escritoris/windows-1asd0/iconos.png)
+![lxde](/escritoris/windows-1asd0/iconos.png)
 
 ### Canviar l'idioma
 
-![windows-10](/escritoris/windows-10asd/idioma.png)
+![lxde](/escritoris/windows-10asd/idioma.png)
 
 ### Gestionar l'inici
 
-![windows-10](/escritoris/windows-10asd/iniciogest.png)
+![lxde](/escritoris/windows-10asd/iniciogest.png)
 
 ### Desancar icones de la barra de tasques
 
-![windows-10](/escritoris/windows-10asd/desanclar.png)
+![lxde](/escritoris/windows-10asd/desanclar.png)
 
 ### Daltonismo
 
-![windows-10](/escritoris/windows-10asd/daltonismo.png)
+![lxde](/escritoris/windows-10asd/daltonismo.png)
 
 ### Canviar el inici de sessió
 
-![windows-10](/escritoris/windows-10adsa/cambiarses.png)
+![lxde](/escritoris/windows-10adsa/cambiarses.png)
 
 ### Buscar document sabent el nombre
 
-![windows-10](/escritoris/windows-10asda/bdoc.png)
+![lxde](/escritoris/windows-10asda/bdoc.png)
 
 ### Canviar l'horientació de la barra de tasques
 
-![windows-10](/escritoris/windows-asda/barra.png)
+![lxde](/escritoris/windows-asda/barra.png)
