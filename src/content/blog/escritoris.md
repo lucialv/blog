@@ -90,51 +90,51 @@ Click dret sobre l'ícone i seleccionar `Desanclar de la barra de tasques`
 
 ### Canviar el fons de pantalla
 
-![windows-11](/escritoris/windows-10asd/fondo.png)
+![windows-11](/escritoris/windows-11/fondo.png)
 
 ### Canviar el color del tema
 
-![windows-11](/escritoris/windows-1asd0/colores.png)
+![windows-11](/escritoris/windows-11/cambiarcolores.png)
 
 ### Canviar l'orientació de la pantalla
 
-![windows-11](/escritoris/windows-1asd0/orientar.png)
-
-### Canviar Usuari
-
-![windows-11](/escritoris/windows-1asd0/usuario.png)
+![windows-11](/escritoris/windows-11/orientapantalla.png)
 
 ### Canviar mida icones
 
-![windows-11](/escritoris/windows-1asd0/iconos.png)
-
-### Canviar l'idioma
-
-![windows-11](/escritoris/windows-10asd/idioma.png)
-
-### Gestionar l'inici
-
-![windows-11](/escritoris/windows-10asd/iniciogest.png)
+![windows-11](/escritoris/windows-11/midaiconos.png)
 
 ### Desancar icones de la barra de tasques
 
-![windows-11](/escritoris/windows-10asd/desanclar.png)
+![windows-11](/escritoris/windows-11/desanclar.png)
 
 ### Daltonismo
 
-![windows-11](/escritoris/windows-10asd/daltonismo.png)
-
-### Canviar el inici de sessió
-
-![windows-11](/escritoris/windows-10adsa/cambiarses.png)
+![windows-11](/escritoris/windows-11/daltonismo.png)
 
 ### Buscar document sabent el nombre
 
-![windows-11](/escritoris/windows-10asda/bdoc.png)
+![windows-11](/escritoris/windows-10asda/buscardoc.png)
 
 ### Canviar l'horientació de la barra de tasques
 
-![windows-11](/escritoris/windows-asda/barra.png)
+![windows-11](/escritoris/windows-asda/orienta.png)
+
+### Mida text
+
+![windows-11](/escritoris/windows-11/texto.png)
+
+### Reconèixer la veu
+
+![windows-11](/escritoris/windows-11/voz.png)
+
+### Canviar el tema
+
+![windows-11](/escritoris/windows-11/tema.png)
+
+### Buscar carpeta sabent el nombre
+
+![windows-11](/escritoris/windows-11/buscarcarpeta.png)
 
 ## Mac
 
