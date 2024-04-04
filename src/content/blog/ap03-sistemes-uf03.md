@@ -1,6 +1,6 @@
 ---
 title: "AP_03 Creació usuaris Linux"
-description: "AP_03 Creació usuaris Linux amb ubuntu
+description: "AP_03 Creació usuaris Linux amb ubuntu"
 cover: "~/assets/ubuntu.webp"
 coverAlt: "Ubuntu"
 pubDate: "4 Apr 2024"
