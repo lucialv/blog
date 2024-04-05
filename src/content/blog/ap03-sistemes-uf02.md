@@ -2,10 +2,10 @@
 title: "AP_03 Creació usuaris Windows"
 description: "AP_03 Creació usuaris Windows"
 cover: "~/assets/windows11.jpg"
-coverAlt: "Ubuntu"
+coverAlt: "Windows"
 pubDate: "4 Apr 2024"
 tags:
-  - linux
+  - windows
   - virtualbox
   - deberes
 ---
