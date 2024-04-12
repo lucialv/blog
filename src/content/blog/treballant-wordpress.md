@@ -36,3 +36,15 @@ Backend pagina de benvinguda:
 Frontend pagina de benvinguda:
 
 ![FrontendPB](/twordpress/6.png)
+
+## Exercici 3
+
+He possat un nou tema:
+
+![Tema](/twordpress/7.png)
+
+## Exercici 6
+
+He instalat els seguents plugins
+
+![Plugins](/twordpress/8.png)
