@@ -98,7 +98,7 @@ Click dret sobre l'ícone i seleccionar `Desanclar de la barra de tasques`
 
 ### Canviar l'orientació de la pantalla
 
-![windows-11](/escritoris/windows-11/orientapantalla.png)
+![windows-11](/escritoris/windows-11/orintapantalla.png)
 
 ### Canviar mida icones
 
