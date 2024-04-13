@@ -114,11 +114,11 @@ Click dret sobre l'ícone i seleccionar `Desanclar de la barra de tasques`
 
 ### Buscar document sabent el nombre
 
-![windows-11](/escritoris/windows-10asda/buscardoc.png)
+![windows-11](/escritoris/windows-11/buscardoc.png)
 
 ### Canviar l'horientació de la barra de tasques
 
-![windows-11](/escritoris/windows-asda/orienta.png)
+![windows-11](/escritoris/windows-11/orienta.png)
 
 ### Mida text
 
