@@ -276,7 +276,7 @@ Click dret sobre l'ícone i seleccionar `Desanclar de la barra de tasques`
 
 ### Canviar l'orientació de la pantalla
 
-![kde](/escritoris/kde/3.png)
+![kde](/escritoris/kde/`3.png)
 
 ### Canviar Usuari
 
