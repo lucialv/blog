@@ -62,7 +62,7 @@ Esperem
 
 Esperem
 
-![windows-11](/puntwin/14.png)
+![windows-11](/puntwin/14.jpg)
 
 I ja està, el sistema s'ha restaurat
 
