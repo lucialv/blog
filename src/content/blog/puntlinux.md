@@ -54,7 +54,7 @@ Es començarà a restaurar el sistema.
 
 Un cop acabat et sortirà que ja s'ha restaurat.
 
-![linux](/puntlinux/11.png)
+![linux](/puntlinux/11.jpg)
 
 I com podem veure ja no tenim els arxius que hem creat a descargues.
 
