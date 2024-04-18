@@ -13,4 +13,3 @@ tags:
 Obrir el menú de Windows i buscar `Crear un punt de restauració` i clicar-hi.
 
 ![windows-11](/puntwin/1.png)
-
