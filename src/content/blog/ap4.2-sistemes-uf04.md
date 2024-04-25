@@ -330,3 +330,43 @@ Inicia sessió amb el professor_inicials
 Modifica el curs Aplicacions Web de tal manera que tingui 5 temes, un per cada UF que té el mòdul.
 
 ![moodle](/moodle/33.png)
+
+Posa activitats:
+
+![moodle](/moodle/34.png)
+
+## Apartat 6: Qualificació
+
+Entra amb dues contes de alumes i fes que facin les activitats.
+
+![moodle](/moodle/35.png)
+
+![moodle](/moodle/36.png)
+
+Ara inicia sessió amb el professor_inicials
+
+![moodle](/moodle/37.png)
+
+Mira les trameses
+
+![moodle](/moodle/38.png)
+
+Qualifica les activitats
+
+![moodle](/moodle/39.png)
+
+![moodle](/moodle/40.png)
+
+I aixi ja la qualificació està feta.
+
+![moodle](/moodle/41.png)
+
+Finalment entra a l’apartat Qualificacions > Configuració (categories i elements) i crea la nota mitjana de les pràctiques del curs al total de la categoria
+
+![moodle](/moodle/42.png)
+
+## Apartat 7: Exportar importar cursos
+
+No em deixa però aquí deixo com es fa:
+
+![moodle](/moodle/43.png)
