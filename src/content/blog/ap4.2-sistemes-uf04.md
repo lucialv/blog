@@ -1,7 +1,7 @@
 ---
 title: "AP_4.2 Instal·lació i configuració de Moodle"
 description: "AP_4.2 Instal·lació i configuració de Moodle amb Ubuntu"
-cover: "~/assets/fedora.webp"
+cover: "~/assets/moodle-logo.png"
 coverAlt: "Moodle"
 pubDate: "4 Apr 2024"
 tags:
