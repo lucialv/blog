@@ -251,5 +251,82 @@ Omplim les dades i li donem a desa els canvis.
 
 I ja tenim moodle instal·lat i configurat.
 
-## Configuració bàsica
+## Apartat 2: Configuració bàsica
 
+Canviar el idioma per defecte:
+
+![moodle](/moodle/16.png)
+
+Configura la pàgina principal dins de Administració del lloc > Primera plana > Paràmetres de la primera plana. Modifica el nom del site, llarg i curt, i la descripció. Fes que el nom del portal sigui el_teu_nom_inicials i el curt inicials.
+
+![moodle](/moodle/17.png)
+
+Afegeix elements:
+
+![moodle](/moodle/18.png)
+
+Canvia el tema per defecte del site:
+
+![moodle](/moodle/19.png)
+
+Modifica el teu lloc Moodle perquè s’assembli el màxim possible a la configuració de blocs i mòduls que té el Moodle del centre.
+
+![moodle](/moodle/20.png)
+
+## Apartat 3: Usuaris
+
+Crea usuaris i assigna rols
+
+![moodle](/moodle/21.png)
+
+Resultat final amb els tres usuaris creats:
+
+![moodle](/moodle/22.png)
+
+Assigna’ls els rols de gestor, professor i alumne/estudiant.
+
+![moodle](/moodle/23.png)
+
+Pujar una quantitat massiva d'estudiants:
+
+Primer tenim que fer un arxiu .csv amb les dades dels alumnes, per exemple:
+
+![moodle](/moodle/24.png)
+
+Després pujem el arxiu
+
+![moodle](/moodle/25.png)
+
+I com podem veure s'han carregat tots els alumnes.
+
+![moodle](/moodle/26.png)
+
+Li donem a continuar i ja tindriem els alumnes creats.
+
+![moodle](/moodle/27.png)
+
+## Apartat 4: Cursos
+
+Crea un categoria SMX1
+
+![moodle](/moodle/28.png)
+
+Un curs a dins que es digui M8-Aplicacions Web INICIALS.
+
+![moodle](/moodle/29.png)
+
+![moodle](/moodle/30.png)
+
+## Apartat 5: Rol de professor
+
+Asigna el rol de Gestor de cursos al professor_inicials:
+
+![moodle](/moodle/31.png)
+
+Inicia sessió amb el professor_inicials
+
+![moodle](/moodle/32.png)
+
+Modifica el curs Aplicacions Web de tal manera que tingui 5 temes, un per cada UF que té el mòdul.
+
+![moodle](/moodle/33.png)
