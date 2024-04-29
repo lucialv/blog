@@ -108,33 +108,81 @@ Click dret sobre l'ícone i seleccionar `Desanclar de la barra de tasques`
 
 ![windows-11](/escritoris/windows-11/desanclar.png)
 
+### Activar/Desactivar notificacions
+
+![windows-11](/escritoris/windows-11/notis.png)
+
+### Canviar hora i data
+
+![windows-11](/escritoris/windows-11/cambiar-hora.png)
+
+![windows-11](/escritoris/windows-11/cambiar-hora2.png)
+
+### Activar/Desactivar Lupa
+
+Si tens problemes de visió pot set que vulguis activar la lupa.
+
+![windows-11](/escritoris/windows-11/lupa.png)
+
+### Activar/Desactivar efectes visuals
+
+Pot ser que vulguis desactivar els efectes visuals per aconseguir un millor rendiment o perquè no t'agradin perquè et maregen.
+
+![windows-11](/escritoris/windows-11/efectos.png)
+
 ### Daltonismo
 
 ![windows-11](/escritoris/windows-11/daltonismo.png)
-
-### Buscar document sabent el nombre
-
-![windows-11](/escritoris/windows-11/buscardoc.png)
-
-### Canviar l'horientació de la barra de tasques
-
-![windows-11](/escritoris/windows-11/orienta.png)
-
-### Mida text
-
-![windows-11](/escritoris/windows-11/texto.png)
 
 ### Reconèixer la veu
 
 ![windows-11](/escritoris/windows-11/voz.png)
 
-### Canviar el tema
+### Veure els teus components de l'ordinador
 
-![windows-11](/escritoris/windows-11/tema.png)
+Primer has d'obrir `Executar` amb `Win + R` i escriure `dxdiag` i li dones a `OK`.
+
+![windows-11](/escritoris/windows-11/dxdiag.png)
+
+A la finestra de sistema et surt la memòria RAM i el processador.
+
+![windows-11](/escritoris/windows-11/dxdiag2.png)
+
+A la finestra de pantalla et surt la targeta gràfica.
+
+![windows-11](/escritoris/windows-11/dxdiag3.png)
+
+### Desinstalar una aplicació
+
+![windows-11](/escritoris/windows-11/desinstalar.png)
+
+### Configuració Wi-Fi
+
+Vermell: Pots activar o desactivar el Wi-Fi.
+
+Verd: Pots veure les xarxes Wi-Fi disponibles i connectar-te a una.
+
+Blau: Pots veure les xarxes Wi-Fi a les que saps la contrasenya i gestionar-les.
+
+Lila: Pots gestionar la configuració de la xarxa Wi-Fi a la que estàs connectat.
+
+![windows-11](/escritoris/windows-11/wifi.png)
+
+### Buscar document sabent el nombre
+
+![windows-11](/escritoris/windows-11/buscardoc.png)
 
 ### Buscar carpeta sabent el nombre
 
 ![windows-11](/escritoris/windows-11/buscarcarpeta.png)
+
+### Canviar l'horientació de la barra de tasques
+
+![windows-11](/escritoris/windows-11/orienta.png)
+
+### Canviar el tema
+
+![windows-11](/escritoris/windows-11/tema.png)
 
 ## Mac
 
