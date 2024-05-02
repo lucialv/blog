@@ -28,6 +28,10 @@ tags:
 
 ![windows-10](/escritoris/windows-10/usuario.png)
 
+### Canviar fecha i hora
+
+![windows-10](/escritoris/windows-10/cambiar-hora.png)
+
 ### Canviar mida icones
 
 ![windows-10](/escritoris/windows-10/midaiconos.png)
@@ -57,6 +61,14 @@ Click dret sobre l'ícone i seleccionar `Desanclar de la barra de tasques`
 ### Buscar document sabent el nombre
 
 ![windows-10](/escritoris/windows-10/bdoc.png)
+
+### Buscar carpeta sabent el nombre
+
+![windows-10](/escritoris/windows-10/carpeta.png)
+
+### Desinstalar una aplicació
+
+![windows-10](/escritoris/windows-10/desinstalar.png)
 
 ### Canviar l'horientació de la barra de tasques
 
@@ -240,7 +252,7 @@ Lila: Pots gestionar la configuració de la xarxa Wi-Fi a la que estàs connecta
 
 ![gnome](/escritoris/gnome/1.png)
 
-### Canviar el color del tema 
+### Canviar el color del tema
 
 ![gnome](/escritoris/gnome/2.png)
 
