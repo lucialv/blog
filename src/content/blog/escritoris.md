@@ -70,6 +70,20 @@ Click dret sobre l'ícone i seleccionar `Desanclar de la barra de tasques`
 
 ![windows-10](/escritoris/windows-10/desinstalar.png)
 
+### Verificar hardware
+
+Primer has d'obrir `Executar` amb `Win + R` i escriure `dxdiag` i li dones a `OK`.
+
+![windows-10](/escritoris/windows-10/dxdiag.png)
+
+A la finestra de sistema et surt la memòria RAM i el processador.
+
+![windows-10](/escritoris/windows-10/dxdiag-2.png)
+
+A la finestra de pantalla et surt la targeta gràfica.
+
+![windows-10](/escritoris/windows-10/dxdiag-3.png)
+
 ### Canviar l'horientació de la barra de tasques
 
 ![windows-10](/escritoris/windows-10/barra.png)
