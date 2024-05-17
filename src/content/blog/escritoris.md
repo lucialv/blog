@@ -88,30 +88,6 @@ A la finestra de pantalla et surt la targeta gràfica.
 
 ![windows-10](/escritoris/windows-10/barra.png)
 
-<!-- ### Canviar la resolució de pantalla
-
-### Ajustar la brillantor de la pantalla
-
-### Configurar múltiples monitors
-
-### Personalitzar la barra de tasques
-
-### Canviar la disposició dels elements del menú Inici
-
-### Configurar el protector de pantalla
-
-### Ajustar el volum del sistema
-
-### Canviar el disseny del teclat
-
-### Configurar les opcions d'accessibilitat
-
-### Establir les opcions de privacitat
-
-### Configurar les notificacions del sistema
-
-### Personalitzar l'escriptori -->
-
 ## Windows 11
 
 ### Canviar el fons de pantalla
