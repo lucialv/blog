@@ -46,14 +46,14 @@ const series = (await getCollection("series")).find((s) => s.data.id === seriesI
     <div class="font-semibold text-xs uppercase space-y-2">
       <div class="flex flex-wrap items-center space-x-1">
         <span>
-          Published on <FormattedDate date={pubDate} />
+          Publicat el <FormattedDate date={pubDate} />
         </span>
         {
           updatedDate && (
             <>
               <span>{"•"}</span>
               <span>
-                Updated on <FormattedDate date={updatedDate} />
+                Actualitzat el <FormattedDate date={updatedDate} />
               </span>
             </>
           )
@@ -89,7 +89,7 @@ const series = (await getCollection("series")).find((s) => s.data.id === seriesI
       {
         headings.length > 0 && (
           <nav class="hidden text-sm space-y-2 mt-9 lg:block lg:w-4/12 h-screen sticky top-20 z-40">
-            <span class="font-black dark:text-white text-black uppercase">On This Page</span>
+            <span class="font-black dark:text-white text-black uppercase">En aquesta pàgina</span>
             <TableOfContent headings={headings} />
             <div class="border-slate-700 border-b-[1px]" />
             <div class="flex float-right">
