@@ -7,7 +7,7 @@ orderInSeries: 1
 pubDate: "25 Nov 2024"
 tags:
   - python
-  - c#
+  - csharp
   - programacio
 ---
 
