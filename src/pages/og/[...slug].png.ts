@@ -38,7 +38,7 @@ export const GET: APIRoute = async ({ props }) => {
   // Layout constants (in px)
   const ICON_RADIUS = 11;
   const ICON_CENTER_X = 22; // circle center
-  const ICON_BLOCK_WIDTH = 42; // circle + (slightly tighter) gap before text
+  const ICON_BLOCK_WIDTH = 44; // circle + gap before text for readability
   const RIGHT_PADDING = 32; // right padding at end of badge
   const MIN_BADGE_WIDTH = ICON_BLOCK_WIDTH + RIGHT_PADDING + 30; // ensures some body
   const MAX_BADGE_WIDTH = 260;
@@ -76,10 +76,10 @@ export const GET: APIRoute = async ({ props }) => {
               fill="url(#tag-gradient)" stroke="rgba(255,255,255,0.9)" stroke-width="1.2"
               filter="drop-shadow(0 4px 10px rgba(0,0,0,0.18))"/>
         <!-- icon circle -->
-  <circle cx="22" cy="22" r="11" fill="hsl(${hue},85%,55%)"/>
-  <text x="22" y="22" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle">#</text>
-        <!-- tag text: start anchored to avoid overlap with icon -->
-        <text x="${ICON_BLOCK_WIDTH}" y="21.2" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" letter-spacing="0.15">
+        <circle cx="22" cy="22" r="11" fill="hsl(${hue},85%,55%)"/>
+        <text x="22" y="22" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle">#</text>
+        <!-- tag text: start anchored, vertically centered -->
+        <text x="${ICON_BLOCK_WIDTH + 2}" y="22" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" alignment-baseline="middle" letter-spacing="0.15">
           ${escapeHtml(tagText)}
         </text>
       </g>`);
@@ -217,11 +217,11 @@ export const GET: APIRoute = async ({ props }) => {
         
         <!-- Heart icon -->
         <circle cx="25" cy="25" r="10" fill="hsl(${siteConfig.themeColor.hue}, 70%, 60%)" opacity="0.9"/>
-        <text x="25" y="30" fill="white" font-family="Arial" font-size="12" text-anchor="middle">♡</text>
+  <text x="25" y="30" fill="white" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle">♡</text>
         
         <!-- Blog name -->
-        <text x="175" y="32" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
-              font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="end">
+    <text x="175" y="30" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
+      font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="end" dominant-baseline="middle" alignment-baseline="middle">
           Lucia's Blog
         </text>
       </g>
