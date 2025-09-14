@@ -36,9 +36,7 @@ export const GET: APIRoute = async ({ props }) => {
   const MAX_TAG_TEXT_LEN = 20;
 
   // Layout constants (in px)
-  const ICON_RADIUS = 11;
-  const ICON_CENTER_X = 22; // circle center
-  const ICON_BLOCK_WIDTH = 44; // circle + gap before text for readability
+  const ICON_BLOCK_WIDTH = 40; // circle + gap before text for readability
   const RIGHT_PADDING = 32; // right padding at end of badge
   const MIN_BADGE_WIDTH = ICON_BLOCK_WIDTH + RIGHT_PADDING + 30; // ensures some body
   const MAX_BADGE_WIDTH = 260;
