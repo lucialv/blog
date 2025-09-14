@@ -79,7 +79,7 @@ export const GET: APIRoute = async ({ props }) => {
         <circle cx="22" cy="22" r="11" fill="hsl(${hue},85%,55%)"/>
         <text x="22" y="22" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle">#</text>
         <!-- tag text: start anchored, vertically centered -->
-        <text x="${ICON_BLOCK_WIDTH + 4}" y="22.4" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" alignment-baseline="middle" letter-spacing="0.15">
+        <text x="${ICON_BLOCK_WIDTH}" y="22.4" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" alignment-baseline="middle" letter-spacing="0.15">
           ${escapeHtml(tagText)}
         </text>
       </g>`);
