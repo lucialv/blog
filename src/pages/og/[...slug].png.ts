@@ -130,8 +130,10 @@ export const GET: APIRoute = async ({ props }) => {
       
       <!-- Enhanced tags as premium badges -->
       ${tags.length > 0 ? tags.map((tag: string, index: number) => {
-        const tagWidth = Math.min(tag.length * 11 + 50, 140);
-        const xPos = 80 + index * (tagWidth + 12);
+        // More precise width calculation based on character count
+        const tagText = tag.substring(0, 12);
+        const tagWidth = Math.max(tagText.length * 9 + 60, 80);
+        const xPos = 80 + index * (tagWidth + 16);
         // Skip tags that would go beyond the image width
         if (xPos + tagWidth > 1120) return '';
         
@@ -150,12 +152,12 @@ export const GET: APIRoute = async ({ props }) => {
             
             <!-- Tag icon circle -->
             <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 80%, 55%)" opacity="1"/>
-            <text x="20" y="25" fill="white" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">#</text>
+            <text x="20" y="25" fill="white" font-family="Arial" font-size="11" font-weight="bold" text-anchor="middle">#</text>
             
             <!-- Tag text -->
-            <text x="${tagWidth - 12}" y="26" fill="hsl(${siteConfig.themeColor.hue}, 80%, 25%)" 
-                  font-family="Inter, Roboto, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end">
-              ${escapeHtml(tag.substring(0, 14))}
+            <text x="${tagWidth - 15}" y="25" fill="hsl(${siteConfig.themeColor.hue}, 80%, 25%)" 
+                  font-family="Inter, Roboto, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="end">
+              ${escapeHtml(tagText)}
             </text>
           </g>
         `;
