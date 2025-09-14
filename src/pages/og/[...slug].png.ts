@@ -29,27 +29,37 @@ export const GET: APIRoute = async ({ props }) => {
   const tags = post.data.tags ? post.data.tags.slice(0, 8) : [];
 
   // --- Tag badge pre-computation (more accurate width + spacing) ---
-  const MAX_CANVAS_WIDTH = 1200;
   const LEFT_MARGIN = 80;
   const RIGHT_LIMIT = 1120; // keep some right margin
   const TAG_BASE_Y = 556; // visually aligned near bottom
-  const GAP = 28; // gap between tags
+  const GAP = 24; // horizontal gap between tags
   const MAX_TAG_TEXT_LEN = 20;
 
-  const computeTagWidth = (text: string): number => {
-    // Base reserved space: left circle (44px incl padding) + right padding (28)
-    const circleAndPadding = 44 + 28;
+  // Layout constants (in px)
+  const ICON_RADIUS = 11;
+  const ICON_CENTER_X = 22; // circle center
+  const ICON_BLOCK_WIDTH = 44; // circle + gap after it for text start
+  const RIGHT_PADDING = 32; // right padding at end of badge
+  const MIN_BADGE_WIDTH = ICON_BLOCK_WIDTH + RIGHT_PADDING + 30; // ensures some body
+  const MAX_BADGE_WIDTH = 260;
+
+  const estimateTextWidth = (text: string): number => {
     let acc = 0;
     for (const ch of text) {
-      if (/[ilI1\!\|]/.test(ch)) acc += 4.2; // very narrow
-      else if (/[fjrt]/.test(ch)) acc += 5.5; // narrow-ish
-      else if (/[mwMW]/.test(ch)) acc += 10.0; // very wide
-      else if (/[A-Z]/.test(ch)) acc += 8.6; // uppercase
-      else if (/[0-9]/.test(ch)) acc += 7.2; // digits
-      else acc += 7.0; // typical lowercase
+      if (/[ilI1\!\|]/.test(ch)) acc += 4.0; // very narrow
+      else if (/[fjrt]/.test(ch)) acc += 5.2; // narrow-ish
+      else if (/[mwMW]/.test(ch)) acc += 10.2; // very wide
+      else if (/[A-Z]/.test(ch)) acc += 8.4; // uppercase
+      else if (/[0-9]/.test(ch)) acc += 7.0; // digits
+      else acc += 6.8; // typical lowercase
     }
-    const width = circleAndPadding + acc;
-    return Math.max(110, Math.min(width, 250));
+    return acc;
+  };
+
+  const computeTagWidth = (text: string): number => {
+    const textWidth = estimateTextWidth(text);
+    const width = ICON_BLOCK_WIDTH + textWidth + RIGHT_PADDING;
+    return Math.max(MIN_BADGE_WIDTH, Math.min(width, MAX_BADGE_WIDTH));
   };
 
   let currentX = LEFT_MARGIN;
@@ -68,8 +78,8 @@ export const GET: APIRoute = async ({ props }) => {
         <!-- icon circle -->
         <circle cx="22" cy="22" r="11" fill="hsl(${hue},85%,55%)"/>
         <text x="22" y="22" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle">#</text>
-        <!-- tag text -->
-        <text x="${width - 20}" y="22" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="end" dominant-baseline="middle" letter-spacing="0.2">
+        <!-- tag text: start anchored to avoid overlap with icon -->
+        <text x="${ICON_BLOCK_WIDTH}" y="22" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" letter-spacing="0.15">
           ${escapeHtml(tagText)}
         </text>
       </g>`);
