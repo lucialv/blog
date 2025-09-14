@@ -122,8 +122,8 @@ export const GET: APIRoute = async ({ props }) => {
       
       <!-- Enhanced tags as premium badges -->
       ${tags.length > 0 ? tags.map((tag: string, index: number) => {
-        const tagWidth = Math.min(tag.length * 13 + 30, 120);
-        const xPos = 80 + index * (tagWidth + 20);
+        const tagWidth = Math.min(tag.length * 12 + 40, 130);
+        const xPos = 80 + index * (tagWidth + 15);
         return `
           <g transform="translate(${xPos}, 545)">
             <!-- Backdrop blur for tag -->
@@ -137,18 +137,30 @@ export const GET: APIRoute = async ({ props }) => {
                   stroke="rgba(255, 255, 255, 0.6)" stroke-width="1.5"
                   filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
             
-            <!-- Tag icon -->
-            <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.8"/>
-            <text x="20" y="25" fill="white" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">#</text>
+            <!-- Tag icon circle -->
+            <circle cx="20" cy="20" r="10" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.9"/>
+            <text x="20" y="26" fill="white" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">#</text>
             
             <!-- Tag text -->
             <text x="${tagWidth - 15}" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
-                  font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end">
-              ${escapeHtml(tag.substring(0, 10))}
+                  font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="end">
+              ${escapeHtml(tag.substring(0, 12))}
             </text>
           </g>
         `;
       }).join('') : ''}
+      
+      <!-- Date in bottom right of card -->
+      <g transform="translate(1000, 470)">
+        <text x="0" y="0" fill="rgba(0, 0, 0, 0.5)" font-family="Roboto, Arial, sans-serif" 
+              font-size="16" font-weight="500" text-anchor="end">
+          ${new Date(post.data.published).toLocaleDateString('en-US', { 
+            year: 'numeric', 
+            month: 'short', 
+            day: 'numeric' 
+          })}
+        </text>
+      </g>
       
       <!-- Website branding badge with backdrop blur -->
       <g transform="translate(950, 40)">

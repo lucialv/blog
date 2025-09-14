@@ -105,51 +105,63 @@ export const GET: APIRoute = async () => {
             Personal Blog & Learning Journey
           </text>
         </g>
+        
+        <!-- Date in bottom right of card -->
+        <g transform="translate(1000, 470)">
+          <text x="0" y="0" fill="rgba(0, 0, 0, 0.5)" font-family="Roboto, Arial, sans-serif" 
+                font-size="16" font-weight="500" text-anchor="end">
+            ${new Date().toLocaleDateString('en-US', { 
+              year: 'numeric', 
+              month: 'short', 
+              day: 'numeric' 
+            })}
+          </text>
+        </g>
       </g>
       
       <!-- Enhanced decorative badges -->
-      <g transform="translate(600, 545)">
+      <g transform="translate(580, 545)">
         <!-- Backdrop blur -->
-        <rect x="-2" y="-2" width="104" height="44" rx="22" 
+        <rect x="-2" y="-2" width="114" height="44" rx="22" 
               fill="rgba(255, 255, 255, 0.1)" 
               filter="url(#backdrop-blur)"/>
         
         <!-- Badge -->
-        <rect x="0" y="0" width="100" height="40" rx="20" 
+        <rect x="0" y="0" width="110" height="40" rx="20" 
               fill="url(#badge-gradient)" 
               stroke="rgba(255, 255, 255, 0.6)" stroke-width="1.5"
               filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
         
         <!-- Icon -->
-        <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.8"/>
-        <text x="20" y="25" fill="white" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">💻</text>
+        <circle cx="20" cy="20" r="10" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.9"/>
+        <text x="20" y="26" fill="white" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">💻</text>
         
         <!-- Text -->
-        <text x="85" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
-              font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end">
+        <text x="95" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
+              font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="end">
           Code
         </text>
       </g>
       
-      <g transform="translate(720, 545)">
+      <g transform="translate(710, 545)">
         <!-- Backdrop blur -->
-        <rect x="-2" y="-2" width="144" height="44" rx="22" 
+        <rect x="-2" y="-2" width="154" height="44" rx="22" 
               fill="rgba(255, 255, 255, 0.1)" 
               filter="url(#backdrop-blur)"/>
         
         <!-- Badge -->
-        <rect x="0" y="0" width="140" height="40" rx="20" 
+        <rect x="0" y="0" width="150" height="40" rx="20" 
               fill="url(#badge-gradient)" 
               stroke="rgba(255, 255, 255, 0.6)" stroke-width="1.5"
               filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
         
         <!-- Icon -->
-        <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.8"/>
-        <text x="20" y="25" fill="white" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">📚</text>
+        <circle cx="20" cy="20" r="10" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.9"/>
+        <text x="20" y="26" fill="white" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">📚</text>
         
         <!-- Text -->
-        <text x="125" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
-              font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end">
+        <text x="135" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
+              font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="end">
           Learning
         </text>
       </g>
@@ -167,12 +179,12 @@ export const GET: APIRoute = async () => {
               filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
         
         <!-- Icon -->
-        <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.8"/>
-        <text x="20" y="25" fill="white" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">✨</text>
+        <circle cx="20" cy="20" r="10" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.9"/>
+        <text x="20" y="26" fill="white" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">✨</text>
         
         <!-- Text -->
         <text x="105" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
-              font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end">
+              font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="end">
           Blog
         </text>
       </g>
