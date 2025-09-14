@@ -26,7 +26,56 @@ export const GET: APIRoute = async ({ props }) => {
   const title = truncateText(post.data.title, 60);
   const description = post.data.description ? truncateText(post.data.description, 100) : '';
   // Limit tags to ensure they fit within the image width
-  const tags = post.data.tags ? post.data.tags.slice(0, 4) : [];
+  const tags = post.data.tags ? post.data.tags.slice(0, 8) : [];
+
+  // --- Tag badge pre-computation (more accurate width + spacing) ---
+  const MAX_CANVAS_WIDTH = 1200;
+  const LEFT_MARGIN = 80;
+  const RIGHT_LIMIT = 1120; // keep some right margin
+  const TAG_BASE_Y = 556; // visually aligned near bottom
+  const GAP = 28; // gap between tags
+  const MAX_TAG_TEXT_LEN = 20;
+
+  const computeTagWidth = (text: string): number => {
+    // Base reserved space: left circle (44px incl padding) + right padding (28)
+    const circleAndPadding = 44 + 28;
+    let acc = 0;
+    for (const ch of text) {
+      if (/[ilI1\!\|]/.test(ch)) acc += 4.2; // very narrow
+      else if (/[fjrt]/.test(ch)) acc += 5.5; // narrow-ish
+      else if (/[mwMW]/.test(ch)) acc += 10.0; // very wide
+      else if (/[A-Z]/.test(ch)) acc += 8.6; // uppercase
+      else if (/[0-9]/.test(ch)) acc += 7.2; // digits
+      else acc += 7.0; // typical lowercase
+    }
+    const width = circleAndPadding + acc;
+    return Math.max(110, Math.min(width, 250));
+  };
+
+  let currentX = LEFT_MARGIN;
+  const tagBadges = tags.reduce((acc: string[], rawTag: unknown) => {
+    if (typeof rawTag !== 'string') return acc;
+    const tagText = rawTag.trim().substring(0, MAX_TAG_TEXT_LEN);
+    if (!tagText) return acc;
+    const width = computeTagWidth(tagText);
+    if (currentX + width > RIGHT_LIMIT) return acc; // stop adding when out of space
+    const hue = siteConfig.themeColor.hue;
+    acc.push(`
+      <g transform="translate(${currentX}, ${TAG_BASE_Y})">
+        <rect x="0" y="0" width="${width}" height="44" rx="22"
+              fill="url(#tag-gradient)" stroke="rgba(255,255,255,0.9)" stroke-width="1.2"
+              filter="drop-shadow(0 4px 10px rgba(0,0,0,0.18))"/>
+        <!-- icon circle -->
+        <circle cx="22" cy="22" r="11" fill="hsl(${hue},85%,55%)"/>
+        <text x="22" y="22" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle">#</text>
+        <!-- tag text -->
+        <text x="${width - 20}" y="22" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="end" dominant-baseline="middle" letter-spacing="0.2">
+          ${escapeHtml(tagText)}
+        </text>
+      </g>`);
+    currentX += width + GAP;
+    return acc;
+  }, [] as string[]).join('\n');
   
   // Get banner as base64
   const bannerBase64 = getBannerBase64();
@@ -128,40 +177,8 @@ export const GET: APIRoute = async ({ props }) => {
         </g>
       </g>
       
-      <!-- Enhanced tags as premium badges -->
-      ${tags.length > 0 ? tags.map((tag: string, index: number) => {
-        // More precise width calculation based on character count
-        const tagText = tag.substring(0, 12);
-        const tagWidth = Math.max(tagText.length * 9 + 60, 80);
-        const xPos = 80 + index * (tagWidth + 16);
-        // Skip tags that would go beyond the image width
-        if (xPos + tagWidth > 1120) return '';
-        
-        return `
-          <g transform="translate(${xPos}, 550)">
-            <!-- Backdrop blur for tag -->
-            <rect x="-2" y="-2" width="${tagWidth + 4}" height="44" rx="22" 
-                  fill="rgba(255, 255, 255, 0.15)" 
-                  filter="url(#backdrop-blur)"/>
-            
-            <!-- Tag background with gradient -->
-            <rect x="0" y="0" width="${tagWidth}" height="40" rx="20" 
-                  fill="url(#tag-gradient)" 
-                  stroke="rgba(255, 255, 255, 0.9)" stroke-width="1.5"
-                  filter="drop-shadow(0 4px 12px rgba(0,0,0,0.25))"/>
-            
-            <!-- Tag icon circle -->
-            <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 80%, 55%)" opacity="1"/>
-            <text x="20" y="25" fill="white" font-family="Arial" font-size="11" font-weight="bold" text-anchor="middle">#</text>
-            
-            <!-- Tag text -->
-            <text x="${tagWidth - 15}" y="25" fill="hsl(${siteConfig.themeColor.hue}, 80%, 25%)" 
-                  font-family="Inter, Roboto, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="end">
-              ${escapeHtml(tagText)}
-            </text>
-          </g>
-        `;
-      }).filter(Boolean).join('') : ''}
+      <!-- Tag badges (pre-computed) -->
+      ${tagBadges}
       
       <!-- Date in bottom right of card -->
       <g transform="translate(1000, 470)">
