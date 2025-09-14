@@ -38,7 +38,7 @@ export const GET: APIRoute = async ({ props }) => {
   // Layout constants (in px)
   const ICON_RADIUS = 11;
   const ICON_CENTER_X = 22; // circle center
-  const ICON_BLOCK_WIDTH = 44; // circle + gap after it for text start
+  const ICON_BLOCK_WIDTH = 42; // circle + (slightly tighter) gap before text
   const RIGHT_PADDING = 32; // right padding at end of badge
   const MIN_BADGE_WIDTH = ICON_BLOCK_WIDTH + RIGHT_PADDING + 30; // ensures some body
   const MAX_BADGE_WIDTH = 260;
@@ -76,10 +76,10 @@ export const GET: APIRoute = async ({ props }) => {
               fill="url(#tag-gradient)" stroke="rgba(255,255,255,0.9)" stroke-width="1.2"
               filter="drop-shadow(0 4px 10px rgba(0,0,0,0.18))"/>
         <!-- icon circle -->
-        <circle cx="22" cy="22" r="11" fill="hsl(${hue},85%,55%)"/>
-        <text x="22" y="22" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle">#</text>
+  <circle cx="22" cy="22" r="11" fill="hsl(${hue},85%,55%)"/>
+  <text x="22" y="22" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle">#</text>
         <!-- tag text: start anchored to avoid overlap with icon -->
-        <text x="${ICON_BLOCK_WIDTH}" y="22" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" letter-spacing="0.15">
+        <text x="${ICON_BLOCK_WIDTH}" y="21.2" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" letter-spacing="0.15">
           ${escapeHtml(tagText)}
         </text>
       </g>`);
