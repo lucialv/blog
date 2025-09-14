@@ -1,81 +1,79 @@
 import type { APIRoute } from 'astro';
 import { siteConfig, profileConfig } from '@/config';
 import { Resvg } from '@resvg/resvg-js';
+import { getBannerBase64 } from '@/utils/banner-utils';
 
 export const GET: APIRoute = async () => {
+  
+  // Get banner as base64
+  const bannerBase64 = getBannerBase64();
   
   // Crear SVG para la imagen de Open Graph de la página principal
   const svg = `
     <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <!-- Beautiful gradient that matches your site's aesthetic -->
-        <linearGradient id="mainBg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
-          <stop offset="30%" style="stop-color:#FFB6C1;stop-opacity:1" />
-          <stop offset="60%" style="stop-color:#DDA0DD;stop-opacity:1" />
-          <stop offset="100%" style="stop-color:#E6E6FA;stop-opacity:1" />
-        </linearGradient>
+        <!-- Backdrop blur filter -->
+        <filter id="backdrop-blur" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
+        </filter>
         
-        <!-- Overlay for text readability -->
+        <!-- Stronger backdrop blur for cards -->
+        <filter id="card-backdrop" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="12"/>
+          <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.8 0"/>
+        </filter>
+        
+        <!-- Subtle overlay for better readability -->
         <linearGradient id="overlay" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1" />
-          <stop offset="100%" style="stop-color:rgba(0,0,0,0.2);stop-opacity:1" />
+          <stop offset="0%" style="stop-color:rgba(0,0,0,0.1);stop-opacity:1" />
+          <stop offset="50%" style="stop-color:rgba(0,0,0,0.2);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgba(0,0,0,0.3);stop-opacity:1" />
         </linearGradient>
         
-        <!-- Subtle texture -->
-        <pattern id="texture" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-          <circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/>
-          <circle cx="25" cy="25" r="0.5" fill="rgba(255,255,255,0.05)"/>
-          <circle cx="75" cy="75" r="0.5" fill="rgba(255,255,255,0.05)"/>
-        </pattern>
+        <!-- Badge gradient -->
+        <linearGradient id="badge-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:rgba(255,255,255,0.9);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgba(255,255,255,0.7);stop-opacity:1" />
+        </linearGradient>
       </defs>
       
-      <!-- Background with dreamy gradient -->
-      <rect width="1200" height="630" fill="url(#mainBg)" />
+      <!-- Banner background -->
+      ${bannerBase64 ? `<image href="${bannerBase64}" x="0" y="0" width="1200" height="630" preserveAspectRatio="xMidYMid slice" />` : `
+        <!-- Fallback gradient if banner fails -->
+        <defs>
+          <linearGradient id="fallback" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+            <stop offset="30%" style="stop-color:#FFB6C1;stop-opacity:1" />
+            <stop offset="60%" style="stop-color:#DDA0DD;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E6E6FA;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="630" fill="url(#fallback)" />
+      `}
       
-      <!-- Texture overlay -->
-      <rect width="1200" height="630" fill="url(#texture)" />
-      
-      <!-- Soft overlay -->
+      <!-- Subtle overlay for better text readability -->
       <rect width="1200" height="630" fill="url(#overlay)" />
       
-      <!-- Decorative floating elements -->
-      <g opacity="0.4">
-        <circle cx="100" cy="100" r="25" fill="rgba(255,255,255,0.5)" />
-        <circle cx="1100" cy="150" r="35" fill="rgba(255,255,255,0.3)" />
-        <circle cx="200" cy="500" r="18" fill="rgba(255,255,255,0.6)" />
-        <circle cx="1000" cy="480" r="28" fill="rgba(255,255,255,0.2)" />
-        
-        <!-- Floating books/crystals -->
-        <g transform="translate(950, 80) rotate(15)">
-          <rect x="0" y="0" width="45" height="65" rx="5" fill="rgba(255,255,255,0.5)" stroke="rgba(255,255,255,0.7)" stroke-width="2"/>
-          <line x1="10" y1="15" x2="35" y2="15" stroke="rgba(200,200,255,0.6)" stroke-width="1"/>
-          <line x1="10" y1="25" x2="30" y2="25" stroke="rgba(200,200,255,0.6)" stroke-width="1"/>
-        </g>
-        
-        <g transform="translate(120, 420) rotate(-20)">
-          <rect x="0" y="0" width="40" height="55" rx="4" fill="rgba(255,255,255,0.4)" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
-          <line x1="8" y1="12" x2="32" y2="12" stroke="rgba(255,200,255,0.6)" stroke-width="1"/>
-          <line x1="8" y1="20" x2="28" y2="20" stroke="rgba(255,200,255,0.6)" stroke-width="1"/>
-        </g>
-        
-        <!-- Heart element -->
-        <g transform="translate(1050, 400)">
-          <circle cx="15" cy="15" r="15" fill="rgba(255,182,193,0.6)"/>
-          <text x="15" y="21" fill="rgba(255,255,255,0.9)" font-family="Arial" font-size="16" text-anchor="middle">♡</text>
-        </g>
-      </g>
-      
-      <!-- Main content card -->
+      <!-- Main content card with backdrop blur -->
       <g transform="translate(60, 100)">
-        <!-- Glass-morphism card background -->
+        <!-- Backdrop blur rectangle (behind the card) -->
         <rect x="0" y="0" width="1080" height="430" rx="24" 
+              fill="rgba(255, 255, 255, 0.15)" 
+              filter="url(#card-backdrop)"/>
+        
+        <!-- Main card -->
+        <rect x="0" y="0" width="1080" height="430" rx="24" 
+              fill="rgba(255, 255, 255, 0.25)" 
+              stroke="rgba(255, 255, 255, 0.4)" stroke-width="2"
+              filter="drop-shadow(0 20px 40px rgba(0,0,0,0.15))"/>
+        
+        <!-- Inner card for better text readability -->
+        <rect x="20" y="20" width="1040" height="390" rx="16" 
               fill="rgba(255, 255, 255, 0.85)" 
-              stroke="rgba(255, 255, 255, 0.3)" stroke-width="2"
-              filter="drop-shadow(0 20px 40px rgba(0,0,0,0.1))"/>
+              stroke="rgba(255, 255, 255, 0.3)" stroke-width="1"/>
         
         <!-- Content inside card -->
-        <g transform="translate(40, 40)">
+        <g transform="translate(50, 50)">
           <!-- Main Title -->
           <text x="0" y="80" fill="rgba(0, 0, 0, 0.9)" font-family="Roboto, Arial, sans-serif" 
                 font-size="64" font-weight="700" text-anchor="start">
@@ -90,56 +88,116 @@ export const GET: APIRoute = async () => {
           </text>
           
           <!-- Author info -->
-          <text x="0" y="260" fill="hsl(${siteConfig.themeColor.hue}, 60%, 40%)" 
+          <text x="0" y="240" fill="hsl(${siteConfig.themeColor.hue}, 60%, 40%)" 
                 font-family="Roboto, Arial, sans-serif" font-size="24" font-weight="600" text-anchor="start">
             By ${escapeHtml(profileConfig.name)}
           </text>
           
           <!-- Bio -->
-          <text x="0" y="300" fill="rgba(0, 0, 0, 0.6)" font-family="Roboto, Arial, sans-serif" 
+          <text x="0" y="280" fill="rgba(0, 0, 0, 0.6)" font-family="Roboto, Arial, sans-serif" 
                 font-size="20" font-weight="400" text-anchor="start">
             ${escapeHtml(profileConfig.bio || 'Welcome to my blog')}
           </text>
           
           <!-- Website URL indicator -->
-          <text x="0" y="350" fill="rgba(0, 0, 0, 0.5)" font-family="Roboto, Arial, sans-serif" 
+          <text x="0" y="320" fill="rgba(0, 0, 0, 0.5)" font-family="Roboto, Arial, sans-serif" 
                 font-size="18" font-weight="400" text-anchor="start">
             Personal Blog & Learning Journey
           </text>
         </g>
       </g>
       
-      <!-- Decorative tags -->
-      <g transform="translate(780, 550)">
-        <rect x="0" y="0" width="140" height="40" rx="20" 
-              fill="rgba(255, 255, 255, 0.9)" 
-              stroke="rgba(255, 255, 255, 0.4)" stroke-width="1"
-              filter="drop-shadow(0 4px 8px rgba(0,0,0,0.1))"/>
-        <text x="70" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 40%)" 
-              font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="500" text-anchor="middle">
-          #Learning
-        </text>
-      </g>
-      
-      <g transform="translate(940, 550)">
-        <rect x="0" y="0" width="120" height="40" rx="20" 
-              fill="rgba(255, 255, 255, 0.9)" 
-              stroke="rgba(255, 255, 255, 0.4)" stroke-width="1"
-              filter="drop-shadow(0 4px 8px rgba(0,0,0,0.1))"/>
-        <text x="60" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 40%)" 
-              font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="500" text-anchor="middle">
-          #Blog
-        </text>
-      </g>
-      
-      <g transform="translate(650, 550)">
+      <!-- Enhanced decorative badges -->
+      <g transform="translate(600, 545)">
+        <!-- Backdrop blur -->
+        <rect x="-2" y="-2" width="104" height="44" rx="22" 
+              fill="rgba(255, 255, 255, 0.1)" 
+              filter="url(#backdrop-blur)"/>
+        
+        <!-- Badge -->
         <rect x="0" y="0" width="100" height="40" rx="20" 
-              fill="rgba(255, 255, 255, 0.9)" 
-              stroke="rgba(255, 255, 255, 0.4)" stroke-width="1"
-              filter="drop-shadow(0 4px 8px rgba(0,0,0,0.1))"/>
-        <text x="50" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 40%)" 
-              font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="500" text-anchor="middle">
-          #Code
+              fill="url(#badge-gradient)" 
+              stroke="rgba(255, 255, 255, 0.6)" stroke-width="1.5"
+              filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
+        
+        <!-- Icon -->
+        <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.8"/>
+        <text x="20" y="25" fill="white" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">💻</text>
+        
+        <!-- Text -->
+        <text x="85" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
+              font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end">
+          Code
+        </text>
+      </g>
+      
+      <g transform="translate(720, 545)">
+        <!-- Backdrop blur -->
+        <rect x="-2" y="-2" width="144" height="44" rx="22" 
+              fill="rgba(255, 255, 255, 0.1)" 
+              filter="url(#backdrop-blur)"/>
+        
+        <!-- Badge -->
+        <rect x="0" y="0" width="140" height="40" rx="20" 
+              fill="url(#badge-gradient)" 
+              stroke="rgba(255, 255, 255, 0.6)" stroke-width="1.5"
+              filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
+        
+        <!-- Icon -->
+        <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.8"/>
+        <text x="20" y="25" fill="white" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">📚</text>
+        
+        <!-- Text -->
+        <text x="125" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
+              font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end">
+          Learning
+        </text>
+      </g>
+      
+      <g transform="translate(880, 545)">
+        <!-- Backdrop blur -->
+        <rect x="-2" y="-2" width="124" height="44" rx="22" 
+              fill="rgba(255, 255, 255, 0.1)" 
+              filter="url(#backdrop-blur)"/>
+        
+        <!-- Badge -->
+        <rect x="0" y="0" width="120" height="40" rx="20" 
+              fill="url(#badge-gradient)" 
+              stroke="rgba(255, 255, 255, 0.6)" stroke-width="1.5"
+              filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
+        
+        <!-- Icon -->
+        <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.8"/>
+        <text x="20" y="25" fill="white" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">✨</text>
+        
+        <!-- Text -->
+        <text x="105" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
+              font-family="Roboto, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end">
+          Blog
+        </text>
+      </g>
+      
+      <!-- Website branding badge with backdrop blur -->
+      <g transform="translate(950, 40)">
+        <!-- Backdrop blur -->
+        <rect x="-2" y="-2" width="204" height="54" rx="27" 
+              fill="rgba(255, 255, 255, 0.1)" 
+              filter="url(#backdrop-blur)"/>
+        
+        <!-- Main badge -->
+        <rect x="0" y="0" width="200" height="50" rx="25" 
+              fill="url(#badge-gradient)" 
+              stroke="rgba(255, 255, 255, 0.6)" stroke-width="1.5"
+              filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
+        
+        <!-- Heart icon -->
+        <circle cx="25" cy="25" r="10" fill="hsl(${siteConfig.themeColor.hue}, 70%, 60%)" opacity="0.9"/>
+        <text x="25" y="30" fill="white" font-family="Arial" font-size="12" text-anchor="middle">♡</text>
+        
+        <!-- Blog name -->
+        <text x="175" y="32" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
+              font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="end">
+          Lucia's Blog
         </text>
       </g>
     </svg>
