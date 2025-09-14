@@ -79,7 +79,7 @@ export const GET: APIRoute = async ({ props }) => {
         <circle cx="22" cy="22" r="11" fill="hsl(${hue},85%,55%)"/>
         <text x="22" y="22" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle">#</text>
         <!-- tag text: start anchored, vertically centered -->
-        <text x="${ICON_BLOCK_WIDTH + 2}" y="22" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" alignment-baseline="middle" letter-spacing="0.15">
+        <text x="${ICON_BLOCK_WIDTH + 4}" y="22.4" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" alignment-baseline="middle" letter-spacing="0.15">
           ${escapeHtml(tagText)}
         </text>
       </g>`);
@@ -215,13 +215,13 @@ export const GET: APIRoute = async ({ props }) => {
               stroke="rgba(255, 255, 255, 0.6)" stroke-width="1.5"
               filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
         
-        <!-- Heart icon -->
-        <circle cx="25" cy="25" r="10" fill="hsl(${siteConfig.themeColor.hue}, 70%, 60%)" opacity="0.9"/>
-  <text x="25" y="30" fill="white" font-family="Arial" font-size="12" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle">♡</text>
+    <!-- Heart icon (enlarged & optically centered) -->
+    <circle cx="27" cy="25" r="12" fill="hsl(${siteConfig.themeColor.hue}, 70%, 58%)" opacity="0.95"/>
+    <text x="27" y="26" fill="white" font-family="'Segoe UI Symbol', Arial, sans-serif" font-size="15" font-weight="600" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle">♡</text>
         
-        <!-- Blog name -->
-    <text x="175" y="30" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
-      font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="end" dominant-baseline="middle" alignment-baseline="middle">
+    <!-- Blog name (recenter vertically) -->
+    <text x="176" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
+      font-family="Inter, Roboto, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="end" dominant-baseline="middle" alignment-baseline="middle" letter-spacing="0.3">
           Lucia's Blog
         </text>
       </g>
