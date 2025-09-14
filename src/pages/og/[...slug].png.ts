@@ -25,7 +25,8 @@ export const GET: APIRoute = async ({ props }) => {
   // Prepare text content
   const title = truncateText(post.data.title, 60);
   const description = post.data.description ? truncateText(post.data.description, 100) : '';
-  const tags = post.data.tags ? post.data.tags.slice(0, 3) : [];
+  // Limit tags to ensure they fit within the image width
+  const tags = post.data.tags ? post.data.tags.slice(0, 4) : [];
   
   // Get banner as base64
   const bannerBase64 = getBannerBase64();
@@ -54,8 +55,15 @@ export const GET: APIRoute = async ({ props }) => {
         
         <!-- Badge gradient -->
         <linearGradient id="badge-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:rgba(255,255,255,0.9);stop-opacity:1" />
-          <stop offset="100%" style="stop-color:rgba(255,255,255,0.7);stop-opacity:1" />
+          <stop offset="0%" style="stop-color:rgba(255,255,255,0.95);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgba(255,255,255,0.85);stop-opacity:1" />
+        </linearGradient>
+        
+        <!-- Tag gradient -->
+        <linearGradient id="tag-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:rgba(255,255,255,0.98);stop-opacity:1" />
+          <stop offset="50%" style="stop-color:rgba(255,255,255,0.92);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgba(248,250,252,0.9);stop-opacity:1" />
         </linearGradient>
       </defs>
       
@@ -122,33 +130,36 @@ export const GET: APIRoute = async ({ props }) => {
       
       <!-- Enhanced tags as premium badges -->
       ${tags.length > 0 ? tags.map((tag: string, index: number) => {
-        const tagWidth = Math.min(tag.length * 12 + 40, 130);
-        const xPos = 80 + index * (tagWidth + 15);
+        const tagWidth = Math.min(tag.length * 11 + 50, 140);
+        const xPos = 80 + index * (tagWidth + 12);
+        // Skip tags that would go beyond the image width
+        if (xPos + tagWidth > 1120) return '';
+        
         return `
-          <g transform="translate(${xPos}, 545)">
+          <g transform="translate(${xPos}, 550)">
             <!-- Backdrop blur for tag -->
             <rect x="-2" y="-2" width="${tagWidth + 4}" height="44" rx="22" 
-                  fill="rgba(255, 255, 255, 0.1)" 
+                  fill="rgba(255, 255, 255, 0.15)" 
                   filter="url(#backdrop-blur)"/>
             
             <!-- Tag background with gradient -->
             <rect x="0" y="0" width="${tagWidth}" height="40" rx="20" 
-                  fill="url(#badge-gradient)" 
-                  stroke="rgba(255, 255, 255, 0.6)" stroke-width="1.5"
-                  filter="drop-shadow(0 4px 12px rgba(0,0,0,0.2))"/>
+                  fill="url(#tag-gradient)" 
+                  stroke="rgba(255, 255, 255, 0.9)" stroke-width="1.5"
+                  filter="drop-shadow(0 4px 12px rgba(0,0,0,0.25))"/>
             
             <!-- Tag icon circle -->
-            <circle cx="20" cy="20" r="10" fill="hsl(${siteConfig.themeColor.hue}, 70%, 50%)" opacity="0.9"/>
-            <text x="20" y="26" fill="white" font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle">#</text>
+            <circle cx="20" cy="20" r="8" fill="hsl(${siteConfig.themeColor.hue}, 80%, 55%)" opacity="1"/>
+            <text x="20" y="25" fill="white" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle">#</text>
             
             <!-- Tag text -->
-            <text x="${tagWidth - 15}" y="26" fill="hsl(${siteConfig.themeColor.hue}, 60%, 30%)" 
-                  font-family="Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="end">
-              ${escapeHtml(tag.substring(0, 12))}
+            <text x="${tagWidth - 12}" y="26" fill="hsl(${siteConfig.themeColor.hue}, 80%, 25%)" 
+                  font-family="Inter, Roboto, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="end">
+              ${escapeHtml(tag.substring(0, 14))}
             </text>
           </g>
         `;
-      }).join('') : ''}
+      }).filter(Boolean).join('') : ''}
       
       <!-- Date in bottom right of card -->
       <g transform="translate(1000, 470)">
