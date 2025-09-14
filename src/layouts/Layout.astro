@@ -35,6 +35,23 @@ let { title, banner, description, lang, setOGTypeArticle } = Astro.props;
 // so use Swup hooks instead to change the height immediately when a link is clicked
 const isHomePage = pathsEqual(Astro.url.pathname, url("/"));
 
+// Generate OG image URL for posts
+let ogImageUrl = new URL('/metaimage.png', Astro.site).href;
+if (banner && typeof banner === "string" && banner.trim() !== "") {
+	if (banner.startsWith('/')) {
+		ogImageUrl = new URL(banner, Astro.site).href;
+	} else {
+		ogImageUrl = new URL(banner, Astro.url).href;
+	}
+} else if (Astro.url.pathname.startsWith('/posts/')) {
+	// Extract slug from post URL for auto-generated OG image
+	const pathSegments = Astro.url.pathname.split('/');
+	const slug = pathSegments[pathSegments.length - 1] || pathSegments[pathSegments.length - 2];
+	if (slug && slug !== '') {
+		ogImageUrl = new URL(`/og/${slug}.png`, Astro.site).href;
+	}
+}
+
 // defines global css variables
 // why doing this in Layout instead of GlobalStyles: https://github.com/withastro/astro/issues/6728#issuecomment-1502203757
 const configHue = siteConfig.themeColor.hue;
@@ -84,22 +101,22 @@ const bannerOffset =
 		<meta name="description" content={description || pageTitle}>
 		<meta name="author" content={profileConfig.name}>
 
-		<meta property="og:site_name" content={siteConfig.title}>
-		<meta property="og:url" content={Astro.url}>
-		<meta property="og:title" content={pageTitle}>
-		<meta property="og:description" content={description || pageTitle}>
-		{setOGTypeArticle ? (
+	<meta property="og:site_name" content={siteConfig.title}>
+	<meta property="og:url" content={Astro.url}>
+	<meta property="og:title" content={pageTitle}>
+	<meta property="og:description" content={description || pageTitle}>
+	{setOGTypeArticle ? (
         <meta property="og:type" content="article" />
         ) : (
         <meta property="og:type" content="website" />
         )}
+	<meta property="og:image" content={ogImageUrl}>
 
-		<meta name="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content={Astro.url}>
-		<meta name="twitter:title" content={pageTitle}>
-		<meta name="twitter:description" content={description || pageTitle}>
-
-		<meta name="viewport" content="width=device-width" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content={Astro.url}>
+	<meta name="twitter:title" content={pageTitle}>
+	<meta name="twitter:description" content={description || pageTitle}>
+	<meta name="twitter:image" content={ogImageUrl}>		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		{favicons.map(favicon => (
 			<link rel="icon"
