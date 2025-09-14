@@ -36,7 +36,7 @@ export const GET: APIRoute = async ({ props }) => {
   const MAX_TAG_TEXT_LEN = 20;
 
   // Layout constants (in px)
-  const ICON_BLOCK_WIDTH = 40; // circle + gap before text for readability
+  const ICON_BLOCK_WIDTH = 44; // circle + gap before text for readability
   const RIGHT_PADDING = 32; // right padding at end of badge
   const MIN_BADGE_WIDTH = ICON_BLOCK_WIDTH + RIGHT_PADDING + 30; // ensures some body
   const MAX_BADGE_WIDTH = 260;
@@ -77,7 +77,7 @@ export const GET: APIRoute = async ({ props }) => {
         <circle cx="22" cy="22" r="11" fill="hsl(${hue},85%,55%)"/>
         <text x="22" y="22" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle">#</text>
         <!-- tag text: start anchored, vertically centered -->
-        <text x="${ICON_BLOCK_WIDTH}" y="22.4" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" alignment-baseline="middle" letter-spacing="0.15">
+        <text x="${ICON_BLOCK_WIDTH - 4}" y="22.4" fill="hsl(${hue},70%,20%)" font-family="Inter, Roboto, Arial, sans-serif" font-size="15" font-weight="600" text-anchor="start" dominant-baseline="middle" alignment-baseline="middle" letter-spacing="0.15">
           ${escapeHtml(tagText)}
         </text>
       </g>`);
