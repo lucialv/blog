@@ -5,6 +5,7 @@ description: Una introducción para principiantes a las bases de datos SQL.
 tags: [Base de Datos, Tutorial, SQL, JavaScript, VSCode]
 category: Clases-Base-de-Datos
 draft: false
+lang: es
 ---
 
 # Introducción y Conceptos
