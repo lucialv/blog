@@ -1,58 +1,58 @@
 ---
-title: First class of Programming
+title: Primera clase de Programación
 published: 2025-09-12
-description: A beginner's guide to setting up the development environment and creating your first web application with HTML and JavaScript.
-tags: [Programming, Tutorial, HTML, JavaScript, VSCode]
-category: Programming-Classes
+description: Guía para principiantes para configurar el entorno de desarrollo y crear tu primera aplicación web con HTML y JavaScript.
+tags: [Programación, Tutorial, HTML, JavaScript, VSCode]
+category: Clases-Programacion
 draft: false
 ---
 
-# First class of Programming
+# Primera clase de Programación
 
-## IDE and Extensions Installation
+## Instalación del IDE y extensiones
 
-### Installing Visual Studio Code (VSCode)
+### Instalar Visual Studio Code (VSCode)
 
-1. Go to the Visual Studio Code downloads website and download the version corresponding to your operating system.
-2. Run the installer and accept the license terms.
-3. Click the "Next" button (usually no need to modify the options) until the installation is complete.
+1. Ve al sitio de descargas de Visual Studio Code y descarga la versión correspondiente a tu sistema operativo.
+2. Ejecuta el instalador y acepta los términos de la licencia.
+3. Haz clic en el botón "Next" (normalmente no es necesario modificar las opciones) hasta completar la instalación.
 
-### Installing the Live Server Extension (Plugin)
+### Instalar la extensión Live Server
 
-When VSCode opens, the last icon in the left column allows you to install extensions.
+Cuando VSCode se abre, el último icono de la columna izquierda permite instalar extensiones.
 
-You need to search for and install **Live Server**.
+Debes buscar e instalar **Live Server**.
 
-## First Web Application
+## Primera aplicación web
 
-The first program recommended when starting to learn a language is "Hello World".
-This program simply writes the message "Hello World" on the screen.
+El primer programa recomendado al empezar a aprender un lenguaje es "Hello World".
+Este programa simplemente escribe el mensaje "Hello World" en la pantalla.
 
-It doesn't matter if you don't know anything about the language yet, just copy the code and follow a few instructions to check that the environment you've installed works correctly.
-It can also serve as a template for creating your first programs.
+No importa si aún no sabes nada del lenguaje; copia el código y sigue unas instrucciones para comprobar que el entorno que has instalado funciona correctamente.
+También puede servir como plantilla para crear tus primeros programas.
 
-In the case of web applications, although all the code can be put in a single file, it's recommended to separate it to make maintenance easier as the application grows.
-For now, the simplest separation is:
+En el caso de aplicaciones web, aunque todo el código puede ponerse en un solo archivo, se recomienda separarlo para facilitar el mantenimiento a medida que la aplicación crece.
+Por ahora, la separación más simple es:
 
-- An **HTML file** where the document content will go (text, images, links...).
-- A **CSS file** where to put the styles for different types of elements (general font type and size, headers...).
-- A **JS file** where we'll write the JavaScript code to run the application.
+- Un **archivo HTML** donde irá el contenido del documento (texto, imágenes, enlaces...).
+- Un **archivo CSS** donde poner los estilos para distintos tipos de elementos (tipo y tamaño de fuente general, encabezados...).
+- Un **archivo JS** donde escribiremos el código JavaScript que ejecutará la aplicación.
 
-## HTML, CSS and JavaScript Code
+## Código HTML, CSS y JavaScript
 
-First of all, you need to create a folder for the project.
-It's recommended to create the structure **PROG → INTRODUCTION → HELLO** inside the user folder.
+Primero, necesitas crear una carpeta para el proyecto.
+Se recomienda crear la estructura **PROG → INTRODUCTION → HELLO** dentro de tu carpeta de usuario.
 
-Then, open VSCode and, in the main menu, select **File → Open Folder** to open the HELLO folder that was created earlier.
-When opening a folder for the first time, it will ask if you trust the authors of the folder and the files it contains: you need to check the box and click the **Yes, I trust the authors** button.
+Luego, abre VSCode y, en el menú principal, selecciona **File → Open Folder** para abrir la carpeta HELLO que fue creada anteriormente.
+Al abrir una carpeta por primera vez, te preguntará si confías en los autores de la carpeta y de los archivos que contiene: marca la casilla y haz clic en el botón **Yes, I trust the authors**.
 
-Inside the EXPLORER column, the HELLO folder will appear.
-Right-clicking inside and choosing the **New File...** option will create a new file and you need to give it a name.
+En la columna EXPLORER aparecerá la carpeta HELLO.
+Haciendo clic derecho dentro y eligiendo la opción **New File...** crearás un nuevo archivo y tendrás que darle un nombre.
 
-You need to create the files: `hello.html` and `hello.js` (for now, there's no need to create the styles file).
-When selecting a file, it will open in the main window and you need to copy the corresponding code shown below.
+Debes crear los archivos: `hello.html` y `hello.js` (por ahora, no es necesario crear el archivo de estilos).
+Al seleccionar un archivo, se abrirá en la ventana principal y deberás copiar el código correspondiente que se muestra a continuación.
 
-### HTML Document (hello.html):
+### Documento HTML (hello.html):
 
 ```html
 <!doctype html>
@@ -68,46 +68,46 @@ When selecting a file, it will open in the main window and you need to copy the 
 </html>
 ```
 
-### JavaScript Document (hello.js):
+### Documento JavaScript (hello.js):
 
 ```javascript
 "use strict";
 
-// The alert() method is used to display messages and data
+// El método alert() se usa para mostrar mensajes y datos
 alert("Hello World");
 ```
 
-## Running the Application
+## Ejecutar la aplicación
 
-To open the application in a web browser, you need to right-click on the `hello.html` file and select the **Open with Live Server** option.
+Para abrir la aplicación en un navegador web, haz clic derecho sobre el archivo `hello.html` y selecciona la opción **Open with Live Server**.
 
-This will make the application open in the default browser and display a message with the text "Hello World".
-If you modify and save the code of the page files (or by pressing the F5 key), the message will be displayed again.
+Esto hará que la aplicación se abra en el navegador predeterminado y muestre un mensaje con el texto "Hello World".
+Si modificas y guardas el código de los archivos de la página (o pulsando la tecla F5), el mensaje se mostrará de nuevo.
 
-## DOM Manipulation - Modifying HTML Content
+## Manipulación del DOM - Modificar contenido HTML
 
-Beyond showing simple alerts, JavaScript can interact with and modify the HTML content of your web page. This is called **DOM (Document Object Model) manipulation**.
+Más allá de mostrar alertas simples, JavaScript puede interactuar con y modificar el contenido HTML de tu página web. A esto se le llama **manipulación del DOM (Document Object Model)**.
 
-Here's an example of how to select and modify an HTML element:
+A continuación, un ejemplo de cómo seleccionar y modificar un elemento HTML:
 
 ```javascript
 let paragraf1 = document.getElementById("p1");
 paragraf1.innerHTML = "This is the second paragraph";
 ```
 
-### Explanation:
+### Explicación:
 
-1. **`document.getElementById("p1")`** - This method searches for an HTML element that has an `id` attribute with the value "p1". It returns a reference to that element.
+1. **`document.getElementById("p1")`** - Este método busca un elemento HTML que tenga un atributo `id` con el valor "p1". Devuelve una referencia a ese elemento.
 
-2. **`let paragraf1 =`** - We store the reference to the HTML element in a variable called `paragraf1`. This allows us to work with that element later.
+2. **`let paragraf1 =`** - Guardamos la referencia al elemento HTML en una variable llamada `paragraf1`. Esto nos permite trabajar con ese elemento más adelante.
 
-3. **`paragraf1.innerHTML =`** - The `innerHTML` property allows us to change the content inside the HTML element. We can put text, HTML tags, or both.
+3. **`paragraf1.innerHTML =`** - La propiedad `innerHTML` permite cambiar el contenido dentro del elemento HTML. Podemos poner texto, etiquetas HTML o ambos.
 
-4. **`"This is the second paragraph"`** - This is the new content that will replace whatever was inside the element with id "p1".
+4. **`"This is the second paragraph"`** - Este es el nuevo contenido que reemplazará lo que hubiera dentro del elemento con id "p1".
 
-### Complete Example:
+### Ejemplo completo:
 
-To see this in action, you would need to modify your HTML file to include a paragraph with an id:
+Para verlo en acción, necesitas modificar tu archivo HTML para incluir un párrafo con un id:
 
 ```html
 <!doctype html>
@@ -124,17 +124,17 @@ To see this in action, you would need to modify your HTML file to include a para
 </html>
 ```
 
-And then your JavaScript file would contain:
+Y tu archivo JavaScript contendrá:
 
 ```javascript
 "use strict";
 
-// First show the alert
+// Primero muestra el alert
 alert("Hello World");
 
-// Then modify the paragraph content
+// Luego modifica el contenido del párrafo
 let paragraf1 = document.getElementById("p1");
 paragraf1.innerHTML = "This is the second paragraph";
 ```
 
-When you run this application, you'll first see the "Hello World" alert, and after closing it, you'll see that the paragraph text on the webpage has changed from "This is the original paragraph content" to "This is the second paragraph".
+Cuando ejecutes esta aplicación, primero verás el alert de "Hello World" y, tras cerrarlo, verás que el texto del párrafo en la página web ha cambiado de "This is the original paragraph content" a "This is the second paragraph".
