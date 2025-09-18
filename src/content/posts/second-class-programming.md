@@ -1,8 +1,8 @@
 ---
 title: Segunda clase de Programación — Strings en JavaScript
 published: 2025-09-18
-description: Apuntes de la segunda clase sobre la clase String en JavaScript: conceptos clave, métodos principales, ejemplos y ejercicios.
-tags: [Programación, Tutorial, JavaScript, Strings]
+description: Apuntes de la segunda clase sobre la clase String en JavaScript conceptos clave, métodos principales, ejemplos y ejercicios.
+tags: [Programacion, Tutorial, JavaScript, Strings]
 category: Programming-Classes
 draft: false
 ---
