@@ -1,4 +1,3 @@
-# About
-This blog is built with [Fuwari](https://github.com/saicaca/fuwari).
+# Sobre mí
 
-::github{repo="saicaca/fuwari"}
+Me llamo Lucía, tengo 17 años, soy programadora y me gustan los gatos ^^
