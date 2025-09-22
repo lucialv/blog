@@ -111,7 +111,7 @@ Según la edad introducida mostrar (se pueden acumular varios mensajes):
 - Un año es bisiesto si es divisible entre 400, o si es divisible entre 4 pero no entre 100.
 - Probar con: `2000` (sí), `2020` (sí), `2100` (no), `2222` (no).
 
-## Soluciones (variables renombradas en inglés)
+## Soluciones
 
 ```ts
 // Exercise 1
@@ -151,5 +151,3 @@ console.log(`El número ${firstNumber > secondNumber ? `${firstNumber} es mayor 
 let year = 2000;
 console.log(`${year % 4 == 0 ? `Sí es any de traspàs` : `No es any de traspàs`} `);
 ```
-
-> Nota: Las soluciones mantienen la lógica original (incluyendo alguna condición potencialmente errónea como `currentAge >= 18 && currentAge > 80`). Se puede refinar en una revisión posterior.
