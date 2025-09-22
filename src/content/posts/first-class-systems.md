@@ -84,3 +84,44 @@ Rápidamente también aparecio la necesidad de agrupar los bytes y se crearon m�
 | Gigabyte | `GB`          | `1.024` MB = `1.073.741.824` Bytes    |
 | Terabyte | `TB`          | `1.024` GB = `1.099.511.627.776` Bytes |
 | Petabyte | `PB`          | `1.024` TB = `1.125.899.906.842.624` Bytes |
+
+### Norma IEC 80000-13
+
+La **Comisión Electrotécnica Internacional (IEC)** estableció la norma IEC 80000-13 para estandarizar las unidades de información digital y evitar confusiones entre los sistemas decimal y binario.
+
+#### Prefijos binarios (IEC 80000-13)
+
+| Unidad    | Símbolo | Valor en bytes                    | Equivalencia       |
+|-----------|---------|-----------------------------------|--------------------|
+| Kibibyte  | `KiB`   | `1.024` Bytes                     | `2¹⁰` Bytes        |
+| Mebibyte  | `MiB`   | `1.048.576` Bytes                 | `2²⁰` Bytes        |
+| Gibibyte  | `GiB`   | `1.073.741.824` Bytes             | `2³⁰` Bytes        |
+| Tebibyte  | `TiB`   | `1.099.511.627.776` Bytes         | `2⁴⁰` Bytes        |
+| Pebibyte  | `PiB`   | `1.125.899.906.842.624` Bytes     | `2⁵⁰` Bytes        |
+
+#### Diferencia con prefijos decimales
+
+- **Prefijos decimales** (KB, MB, GB): Basados en potencias de 10 (`1.000`)
+- **Prefijos binarios** (KiB, MiB, GiB): Basados en potencias de 2 (`1.024`)
+
+**Ejemplo de diferencia:**
+- `1 GB` = `1.000.000.000` Bytes (decimal)
+- `1 GiB` = `1.073.741.824` Bytes (binario)
+
+Esta distinción es importante en sistemas de almacenamiento donde las diferencias se vuelven significativas.
+
+#### Incumplimiento de la norma
+
+A pesar de la existencia de la norma IEC 80000-13, muchos fabricantes y sistemas operativos no la respetan:
+
+- **Fabricantes de BIOS/UEFI**: Continúan mostrando las capacidades usando KB, MB, GB en lugar de KiB, MiB, GiB, aunque internamente calculen en base binaria.
+- **Fabricantes de memoria RAM**: Etiquetan sus productos como "8GB RAM" cuando técnicamente deberían usar "8GiB" según sus especificaciones binarias.
+- **Microsoft Windows**: El sistema operativo sigue utilizando los prefijos tradicionales (KB, MB, GB) para mostrar tamaños de archivos y capacidades de disco, aunque los cálculos internos sean binarios.
+
+Esta inconsistencia genera confusión entre los usuarios y mantiene la ambigüedad que la norma IEC pretendía resolver.
+
+## Cómo representar números en binario
+
+Es tan fácil como ponerte la tabla y empezar a poner 1s y 0s de izquierda a derecha.
+
+![Tabla de valores y ejemplos](/binario.png)
