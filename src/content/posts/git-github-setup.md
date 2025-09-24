@@ -114,8 +114,9 @@ git config --global user.name "Tu Nombre"
 git config --global user.email "tu-email@ejemplo.com"
 ```
 
-> [!IMPORTANT]
-> Usa el mismo email y username que tienes en GitHub.
+:::important
+Usa el mismo email y username que tienes en GitHub.
+:::
 
 ### Verificar configuración
 ```bash
