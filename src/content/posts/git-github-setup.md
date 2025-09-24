@@ -133,6 +133,16 @@ git clone git@github.com:usuario/repositorio.git
 cd repositorio
 ```
 
+### Inicializar un proyecto nuevo
+```bash
+# Crear carpeta y entrar
+mkdir mi-proyecto
+cd mi-proyecto
+
+# Inicializar Git
+git init
+```
+
 ### Workflow básico de trabajo
 ```bash
 # 1. Ver estado de archivos
@@ -168,6 +178,17 @@ git branch
 
 # Descargar cambios del repositorio remoto
 git pull
+
+# Deshacer cambios (git reset y git restore)
+git reset archivo.txt           # Quitar archivo del staging
+git reset --soft HEAD~1         # Deshacer último commit (mantiene cambios)
+git reset --hard HEAD~1         # Deshacer último commit (BORRA cambios)
+git reset --hard origin/main    # Resetear a la versión remota
+
+# Restaurar archivos (git restore - más moderno)
+git restore archivo.txt         # Descartar cambios no guardados
+git restore --staged archivo.txt # Quitar archivo del staging
+git restore --source=HEAD~1 archivo.txt # Restaurar desde commit anterior
 ```
 
 Y ya ta ^^
